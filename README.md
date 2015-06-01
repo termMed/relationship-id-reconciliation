@@ -1,4 +1,4 @@
-# relationship-id-reconciliation
+# SNOMED CT RelationshipId Reconciliation
 This projects runs an id reconciliation algorithm for inferred relationship files.
 
 The problem that aims to resolve is that after a classification, inferred relationships don't have an id, and looking for the id by the triplet (source, type, target) in previous released file is not enough. Many concepts have the same triplet twice in different relationship groups. Also, the relationship groups number and composition may change in each release, difficulting the identification of relationships contained in these.
