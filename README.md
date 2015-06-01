@@ -51,11 +51,13 @@ Steps:
 3. Match with: sourceId, typeId, destinationId, groupId
 4. Match with: sourceId, typeId, destinationId
 
-These 4 steps are run for each of these sets:
+If in any of these steps more than one relationship matches, the first match is assigned the previously published Id, and the rest gets a new Id.
+
+The runner executes these 4 steps for different sets and resolves remaining relationships:
 
 1. Current active vs previous active
 2. Current active vs previous inactive
 3. Assign new ids to the current active relationships that were not matched
 4. Inactivate previously released inferred relationships that were not matched
 
-If in any of these steps more than one relationship matches, the first match is assigned the previously published Id, and the rest gets a new Id.
+
