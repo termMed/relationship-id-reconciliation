@@ -65,8 +65,7 @@ If in any of these steps more than one relationship matches, the first match is 
 
 The runner executes these 4 steps for different sets and resolves remaining relationships:
 
-1. Current active vs previous active, using Groups composition matching
-2. Current active vs previous active, individual relationships
+1. Current active vs previous active
 3. Current active vs previous inactive
 4. Assign new ids to the current active relationships that were not matched
 5. Inactivate previously released inferred relationships that were not matched
