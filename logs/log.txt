@@ -1,0 +1,1986 @@
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1030) - Classification - Parameters:
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1031) - Current Relationship files : 
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1034) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1037) - Previous Relationship files : 
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1040) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 08 17:05:40] INFO  (RelationshipReconciliation.java:1043) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 08 17:05:47] INFO  (RelationshipReconciliation.java:628) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 08 17:05:47] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 08 17:05:48] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 08 17:05:48] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 08 17:05:48] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 08 17:05:48] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 08 17:05:49] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 08 17:05:49] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 08 17:05:49] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 08 17:05:49] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 08 17:05:50] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 08 17:05:50] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 08 17:05:50] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3672	(mS)	0.0612	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 08 17:05:51] INFO  (RelationshipReconciliation.java:223) - 
+::: *** WROTE *** LAPSED TIME =	10.169 (seconds)	 ***
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1032) - Classification - Parameters:
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1033) - Current Relationship files : 
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1036) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1039) - Previous Relationship files : 
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1042) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 08 17:50:31] INFO  (RelationshipReconciliation.java:1045) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 08 17:50:39] INFO  (RelationshipReconciliation.java:628) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1032) - Classification - Parameters:
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1033) - Current Relationship files : 
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1036) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1039) - Previous Relationship files : 
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1042) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 08 18:10:22] INFO  (RelationshipReconciliation.java:1045) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 08 18:10:37] INFO  (RelationshipReconciliation.java:628) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 08 18:15:06] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 08 18:15:07] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 08 18:15:07] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 08 18:15:07] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 08 18:15:07] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 08 18:15:08] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 08 18:15:08] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 08 18:15:08] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 08 18:15:08] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 08 18:15:08] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 08 18:15:09] INFO  (RelationshipReconciliation.java:635) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 08 18:15:09] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	279571	(mS)	4.659517	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 08 18:15:09] INFO  (RelationshipReconciliation.java:223) - 
+::: *** WROTE *** LAPSED TIME =	287.075 (seconds)	 ***
+[Aug 11 12:23:59] INFO  (RelationshipReconciliation.java:1037) - Classification - Parameters:
+[Aug 11 12:24:00] INFO  (RelationshipReconciliation.java:1038) - Current Relationship files : 
+[Aug 11 12:24:00] INFO  (RelationshipReconciliation.java:1041) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 12:24:00] INFO  (RelationshipReconciliation.java:1044) - Previous Relationship files : 
+[Aug 11 12:24:00] INFO  (RelationshipReconciliation.java:1047) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 12:24:00] INFO  (RelationshipReconciliation.java:1050) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 12:24:54] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 12:24:55] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 12:24:57] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 12:24:58] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 12:24:59] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 12:24:59] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 12:25:00] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 12:25:00] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 12:25:01] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 12:25:02] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 12:25:03] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 12:25:03] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 12:25:04] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	10247	(mS)	0.17078333	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 12:25:04] INFO  (RelationshipReconciliation.java:223) - 
+::: *** WROTE *** LAPSED TIME =	64.077 (seconds)	 ***
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1037) - Classification - Parameters:
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1038) - Current Relationship files : 
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1041) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1044) - Previous Relationship files : 
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1047) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 12:31:42] INFO  (RelationshipReconciliation.java:1050) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 12:31:50] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 12:32:04] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 12:32:04] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 12:32:05] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 12:32:05] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 12:32:05] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 12:32:05] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 12:32:05] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 12:32:06] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 12:32:06] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 12:32:06] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 12:32:06] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 12:32:06] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	16747	(mS)	0.27911666	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 12:35:03] INFO  (RelationshipReconciliation.java:1037) - Classification - Parameters:
+[Aug 11 12:35:04] INFO  (RelationshipReconciliation.java:1038) - Current Relationship files : 
+[Aug 11 12:35:04] INFO  (RelationshipReconciliation.java:1041) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 12:35:04] INFO  (RelationshipReconciliation.java:1044) - Previous Relationship files : 
+[Aug 11 12:35:04] INFO  (RelationshipReconciliation.java:1047) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 12:35:04] INFO  (RelationshipReconciliation.java:1050) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 12:35:10] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 12:35:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 12:35:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 12:35:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 12:35:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 12:35:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 12:35:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 12:35:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 12:35:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 12:35:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 12:35:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 12:35:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 12:35:13] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3501	(mS)	0.05835	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 12:35:13] INFO  (RelationshipReconciliation.java:223) - 
+::: *** WROTE *** LAPSED TIME =	9.147 (seconds)	 ***
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1037) - Classification - Parameters:
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1038) - Current Relationship files : 
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1041) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1044) - Previous Relationship files : 
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1047) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 14:47:28] INFO  (RelationshipReconciliation.java:1050) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 14:48:20] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 14:48:20] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 14:48:21] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 14:48:22] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 14:48:22] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 14:48:23] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 14:48:23] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 14:48:24] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 14:48:24] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 14:48:25] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 14:48:25] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 14:48:25] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 14:48:26] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	6397	(mS)	0.10661666	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 14:48:26] INFO  (RelationshipReconciliation.java:327) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 14:48:26] INFO  (RelationshipReconciliation.java:327) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 14:48:26] INFO  (RelationshipReconciliation.java:223) - 
+::: *** WROTE *** LAPSED TIME =	57.912 (seconds)	 ***
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1037) - Classification - Parameters:
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1038) - Current Relationship files : 
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1041) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1044) - Previous Relationship files : 
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1047) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 14:59:02] INFO  (RelationshipReconciliation.java:1050) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 14:59:26] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 14:59:36] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 14:59:37] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 14:59:38] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 14:59:38] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 14:59:39] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 14:59:39] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 14:59:39] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 14:59:39] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 14:59:40] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 14:59:40] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 14:59:41] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 14:59:41] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	15804	(mS)	0.2634	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1039) - Classification - Parameters:
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1040) - Current Relationship files : 
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1043) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1046) - Previous Relationship files : 
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1049) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:02:28] INFO  (RelationshipReconciliation.java:1052) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:03:09] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:03:09] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:03:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:03:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:03:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:03:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:03:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:03:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:03:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:03:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:03:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:03:13] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:03:14] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	5773	(mS)	0.09621666	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:03:14] INFO  (RelationshipReconciliation.java:327) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1039) - Classification - Parameters:
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1040) - Current Relationship files : 
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1043) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1046) - Previous Relationship files : 
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1049) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:07:45] INFO  (RelationshipReconciliation.java:1052) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:08:08] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:08:08] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:08:10] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:08:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:08:11] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:08:12] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:08:14] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:08:14] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:08:16] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:08:19] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:08:20] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:08:20] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:08:22] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	14724	(mS)	0.2454	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:09:14] INFO  (RelationshipReconciliation.java:327) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1039) - Classification - Parameters:
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1040) - Current Relationship files : 
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1043) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1046) - Previous Relationship files : 
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1049) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:13:18] INFO  (RelationshipReconciliation.java:1052) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:13:26] INFO  (RelationshipReconciliation.java:633) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:13:27] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:13:28] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:13:28] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:13:28] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:13:28] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:13:37] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:13:37] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:13:37] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:13:37] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:13:38] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:13:38] INFO  (RelationshipReconciliation.java:640) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:13:38] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	12646	(mS)	0.21076666	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:14:22] INFO  (RelationshipReconciliation.java:327) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:19:38] INFO  (RelationshipReconciliation.java:1053) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:19:45] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:19:45] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:19:45] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:19:46] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:19:46] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:19:46] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:20:02] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:20:02] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:20:02] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:20:03] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:20:03] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:20:03] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:20:03] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	18648	(mS)	0.31080002	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:20:09] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:20:52] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:21:04] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:21:11] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:24:15] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	276.965 (seconds)	 ***
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:41:58] INFO  (RelationshipReconciliation.java:1053) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:42:07] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:42:07] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:42:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:42:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:42:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:42:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:42:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:42:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:42:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:42:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:42:10] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:42:10] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:42:10] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3797	(mS)	0.06328333	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:42:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:42:36] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:42:37] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:42:38] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 15:52:21] INFO  (RelationshipReconciliation.java:1053) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 15:52:37] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 15:52:37] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 15:52:37] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 15:52:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 15:52:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 15:52:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 15:52:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 15:52:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 15:52:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 15:52:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 15:52:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 15:52:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 15:52:39] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3449	(mS)	0.05748333	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 15:53:14] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:53:14] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:53:14] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 15:53:14] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 16:10:23] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	1082.345 (seconds)	 ***
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131 copia.txt
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-1/sct2_Relationship_Snapshot_INT_20140131.txt
+[Aug 11 16:39:08] INFO  (RelationshipReconciliation.java:1053) - Output Relationship files : /Users/ar/Downloads/Archive-1/sct2_Inferred_Reconciliated.txt
+[Aug 11 16:39:16] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	854084
+::: snorelB.size() = 	854084
+[Aug 11 16:39:16] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Aug 11 16:39:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Aug 11 16:39:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Aug 11 16:39:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Aug 11 16:39:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Aug 11 16:39:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Aug 11 16:39:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Aug 11 16:39:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Aug 11 16:39:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Aug 11 16:39:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3283	(mS)	0.054716665	(min)
+
+::: 
+::: countSame:     	695883
+::: countSameISA:  	443944
+::: A == Classifier Output Path
+::: countA_Diff:   	2
+::: countA_DiffISA:	0
+::: countA_Total:  	939062
+::: B == Classifier Solution Set
+::: countB_Diff:   	2
+::: countB_DiffISA:	0
+::: countB_Total:  	939062
+::: 
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 16:39:19] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	1
+::: current active concept size = 	1
+[Aug 11 16:39:51] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	43.159 (seconds)	 ***
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 18 20:40:42] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 20:40:50] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886240
+::: snorelB.size() = 	887688
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 18 20:40:51] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2242	(mS)	0.03736667	(min)
+
+::: 
+::: countSame:     	694379
+::: countSameISA:  	450411
+::: A == Classifier Output Path
+::: countA_Diff:   	30328
+::: countA_DiffISA:	16427
+::: countA_Total:  	972663
+::: B == Classifier Solution Set
+::: countB_Diff:   	31776
+::: countB_DiffISA:	12977
+::: countB_Total:  	973814
+::: 
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16071
+::: current active concept size = 	17541
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16071
+::: current active concept size = 	17541
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16071
+::: current active concept size = 	17541
+[Nov 18 20:40:52] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16071
+::: current active concept size = 	17540
+[Nov 18 20:41:00] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	17.772 (seconds)	 ***
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 18 20:54:26] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 20:54:33] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	888389
+::: snorelB.size() = 	887688
+[Nov 18 20:54:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 18 20:54:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 18 20:54:34] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2255	(mS)	0.037583336	(min)
+
+::: 
+::: countSame:     	714445
+::: countSameISA:  	463318
+::: A == Classifier Output Path
+::: countA_Diff:   	1317
+::: countA_DiffISA:	131
+::: countA_Total:  	976018
+::: B == Classifier Solution Set
+::: countB_Diff:   	645
+::: countB_DiffISA:	70
+::: countB_Total:  	975900
+::: 
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	218
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	110
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 20:54:35] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 20:54:43] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	17.105 (seconds)	 ***
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 18 20:56:49] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 20:56:54] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	888389
+::: snorelB.size() = 	887688
+[Nov 18 20:56:54] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 18 20:56:55] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2309	(mS)	0.038483333	(min)
+
+::: 
+::: countSame:     	714445
+::: countSameISA:  	463318
+::: A == Classifier Output Path
+::: countA_Diff:   	1317
+::: countA_DiffISA:	131
+::: countA_Total:  	976018
+::: B == Classifier Solution Set
+::: countB_Diff:   	645
+::: countB_DiffISA:	70
+::: countB_Total:  	975900
+::: 
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	218
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	110
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 20:56:56] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 20:57:02] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	12.866 (seconds)	 ***
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 18 20:57:02] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 18 21:07:15] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 21:07:20] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	888389
+::: snorelB.size() = 	887688
+[Nov 18 21:07:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 18 21:07:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 18 21:07:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 18 21:07:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2798	(mS)	0.046633337	(min)
+
+::: 
+::: countSame:     	714445
+::: countSameISA:  	463318
+::: A == Classifier Output Path
+::: countA_Diff:   	1317
+::: countA_DiffISA:	131
+::: countA_Total:  	976018
+::: B == Classifier Solution Set
+::: countB_Diff:   	645
+::: countB_DiffISA:	70
+::: countB_Total:  	975900
+::: 
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	218
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	110
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 21:07:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	289
+::: current active concept size = 	61
+[Nov 18 21:07:30] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	15.192 (seconds)	 ***
+[Nov 18 21:07:30] INFO  (IdCreation.java:196) - Classification - Parameters:
+[Nov 18 21:07:30] INFO  (IdCreation.java:197) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 21:07:30] INFO  (IdCreation.java:198) - NamespaceId : 0
+[Nov 18 21:07:30] INFO  (IdCreation.java:199) - PartitionId : 2
+[Nov 18 21:07:30] INFO  (IdCreation.java:200) - End point url : http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator
+[Nov 18 21:07:30] INFO  (IdCreation.java:201) - Username : snomed11
+[Nov 18 21:07:30] INFO  (IdCreation.java:202) - Release date : 20150131
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 18 21:10:53] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1040) - Classification - Parameters:
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 18:38:07] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:38:18] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	760841
+::: snorelB.size() = 	887598
+[Nov 20 18:38:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 20 18:38:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 20 18:38:19] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2189	(mS)	0.036483333	(min)
+
+::: 
+::: countSame:     	681689
+::: countSameISA:  	463267
+::: A == Classifier Output Path
+::: countA_Diff:   	186
+::: countA_DiffISA:	119
+::: countA_Total:  	815804
+::: B == Classifier Solution Set
+::: countB_Diff:   	126943
+::: countB_DiffISA:	69
+::: countB_Total:  	815706
+::: 
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:38:20] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 18:41:14] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:41:19] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	760841
+::: snorelB.size() = 	887598
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 20 18:41:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 20 18:41:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 20 18:41:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 20 18:41:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 20 18:41:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 20 18:41:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2861	(mS)	0.047683336	(min)
+
+::: 
+::: countSame:     	681689
+::: countSameISA:  	463267
+::: A == Classifier Output Path
+::: countA_Diff:   	186
+::: countA_DiffISA:	119
+::: countA_Total:  	815804
+::: B == Classifier Solution Set
+::: countB_Diff:   	126943
+::: countB_DiffISA:	69
+::: countB_Total:  	815706
+::: 
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:41:22] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:41:32] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:41:34] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:41:35] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	20.43 (seconds)	 ***
+[Nov 20 18:41:35] INFO  (IdCreation.java:196) - Classification - Parameters:
+[Nov 20 18:41:35] INFO  (IdCreation.java:197) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:41:35] INFO  (IdCreation.java:198) - NamespaceId : 0
+[Nov 20 18:41:35] INFO  (IdCreation.java:199) - PartitionId : 2
+[Nov 20 18:41:35] INFO  (IdCreation.java:200) - End point url : http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator
+[Nov 20 18:41:35] INFO  (IdCreation.java:201) - Username : snomed11
+[Nov 20 18:41:35] INFO  (IdCreation.java:202) - Release date : 20150131
+[Nov 20 18:43:16] INFO  (HttpMethodDirector.java:439) - I/O exception (org.apache.axis2.AxisFault) caught when processing request: Broken pipe
+[Nov 20 18:43:16] INFO  (HttpMethodDirector.java:445) - Retrying request
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 18:45:32] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:45:38] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	760841
+::: snorelB.size() = 	887598
+[Nov 20 18:45:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 20 18:45:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 20 18:45:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 20 18:45:38] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 20 18:45:39] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2140	(mS)	0.035666667	(min)
+
+::: 
+::: countSame:     	681689
+::: countSameISA:  	463267
+::: A == Classifier Output Path
+::: countA_Diff:   	186
+::: countA_DiffISA:	119
+::: countA_Total:  	815804
+::: B == Classifier Solution Set
+::: countB_Diff:   	126943
+::: countB_DiffISA:	69
+::: countB_Total:  	815706
+::: 
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:45:40] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:45:49] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:45:49] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:45:52] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	19.383 (seconds)	 ***
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 20 18:45:52] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 18:49:26] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:49:31] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	760841
+::: snorelB.size() = 	887598
+[Nov 20 18:49:31] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 20 18:49:32] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 20 18:49:32] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 20 18:49:32] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 20 18:49:32] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 20 18:49:32] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2575	(mS)	0.042916667	(min)
+
+::: 
+::: countSame:     	681689
+::: countSameISA:  	463267
+::: A == Classifier Output Path
+::: countA_Diff:   	186
+::: countA_DiffISA:	119
+::: countA_Total:  	815804
+::: B == Classifier Solution Set
+::: countB_Diff:   	126943
+::: countB_DiffISA:	69
+::: countB_Total:  	815706
+::: 
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:49:33] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:49:34] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:49:34] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 18:49:34] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 18:49:44] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:49:44] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 18:49:47] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	20.983 (seconds)	 ***
+[Nov 20 18:49:47] INFO  (IdCreation.java:196) - Id Creation - Parameters:
+[Nov 20 18:49:47] INFO  (IdCreation.java:197) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 18:49:47] INFO  (IdCreation.java:198) - NamespaceId : 0
+[Nov 20 18:49:47] INFO  (IdCreation.java:199) - PartitionId : 2
+[Nov 20 18:49:47] INFO  (IdCreation.java:200) - End point url : http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator
+[Nov 20 18:49:47] INFO  (IdCreation.java:201) - Username : snomed11
+[Nov 20 18:49:47] INFO  (IdCreation.java:202) - Release date : 20150131
+[Nov 20 18:51:54] INFO  (HttpMethodDirector.java:439) - I/O exception (org.apache.axis2.AxisFault) caught when processing request: Broken pipe
+[Nov 20 18:51:54] INFO  (HttpMethodDirector.java:445) - Retrying request
+[Nov 20 18:53:52] INFO  (HttpMethodDirector.java:439) - I/O exception (org.apache.axis2.AxisFault) caught when processing request: Broken pipe
+[Nov 20 18:53:52] INFO  (HttpMethodDirector.java:445) - Retrying request
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 19:36:56] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 19:37:07] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	760841
+::: snorelB.size() = 	887598
+[Nov 20 19:37:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 20 19:37:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 20 19:37:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 20 19:37:08] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 20 19:37:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 20 19:37:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 20 19:37:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 20 19:37:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 20 19:37:09] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	3318	(mS)	0.0553	(min)
+
+::: 
+::: countSame:     	681689
+::: countSameISA:  	463267
+::: A == Classifier Output Path
+::: countA_Diff:   	186
+::: countA_DiffISA:	119
+::: countA_Total:  	815804
+::: B == Classifier Solution Set
+::: countB_Diff:   	126943
+::: countB_DiffISA:	69
+::: countB_Total:  	815706
+::: 
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 19:37:10] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	110
+::: current active concept size = 	38726
+[Nov 20 19:37:11] INFO  (RelationshipReconciliation.java:336) - ::: [compareActivesWOMatch] @ #	25000
+[Nov 20 19:37:21] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 19:37:21] INFO  (RelationshipReconciliation.java:248) - ::: [comparePrevInact] @ #	25000
+[Nov 20 19:37:24] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	28.033 (seconds)	 ***
+[Nov 20 19:37:24] INFO  (IdCreation.java:196) - Id Creation - Parameters:
+[Nov 20 19:37:24] INFO  (IdCreation.java:197) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 19:37:24] INFO  (IdCreation.java:198) - NamespaceId : 0
+[Nov 20 19:37:24] INFO  (IdCreation.java:199) - PartitionId : 2
+[Nov 20 19:37:24] INFO  (IdCreation.java:200) - End point url : http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator
+[Nov 20 19:37:24] INFO  (IdCreation.java:201) - Username : snomed11
+[Nov 20 19:37:24] INFO  (IdCreation.java:202) - Release date : 20150131
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 20 19:38:02] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 20 20:44:08] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 20 21:00:10] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 25 10:31:51] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 25 10:31:59] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 25 10:32:00] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2170	(mS)	0.036166668	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 25 10:32:01] INFO  (RelationshipReconciliation.java:328) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17511
+[Nov 25 10:32:09] INFO  (RelationshipReconciliation.java:224) - 
+::: *** WROTE *** LAPSED TIME =	17.905 (seconds)	 ***
+[Nov 25 10:32:10] INFO  (IdCreation.java:198) - Id Creation - Parameters:
+[Nov 25 10:32:10] INFO  (IdCreation.java:199) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 25 10:32:10] INFO  (IdCreation.java:200) - NamespaceId : 0
+[Nov 25 10:32:10] INFO  (IdCreation.java:201) - PartitionId : 2
+[Nov 25 10:32:10] INFO  (IdCreation.java:202) - End point url : http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator
+[Nov 25 10:32:10] INFO  (IdCreation.java:203) - Username : snomed11
+[Nov 25 10:32:10] INFO  (IdCreation.java:204) - Release date : 20150131
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 25 10:37:03] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 26 23:15:04] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1040) - Reconciliation - Parameters:
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1041) - Current Relationship files : 
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1044) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1047) - Previous Relationship files : 
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1050) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 26 23:15:46] INFO  (RelationshipReconciliation.java:1053) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 26 23:16:14] INFO  (RelationshipReconciliation.java:634) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 26 23:16:16] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 26 23:16:16] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 26 23:16:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 26 23:16:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 26 23:16:17] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 26 23:16:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 26 23:16:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 26 23:16:18] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 26 23:16:20] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 26 23:16:21] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 26 23:16:22] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 26 23:16:23] INFO  (RelationshipReconciliation.java:641) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 26 23:16:23] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	10434	(mS)	0.1739	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1064) - Reconciliation - Parameters:
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1065) - Current Relationship files : 
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1068) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1071) - Previous Relationship files : 
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1074) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 27 09:38:25] INFO  (RelationshipReconciliation.java:1077) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:658) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	768617
+::: snorelB.size() = 	887599
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 09:38:33] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 09:38:34] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2211	(mS)	0.036849998	(min)
+
+::: 
+::: countSame:     	684367
+::: countSameISA:  	463337
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	826178
+::: B == Classifier Solution Set
+::: countB_Diff:   	118982
+::: countB_DiffISA:	0
+::: countB_Total:  	826178
+::: 
+[Nov 27 09:46:59] INFO  (RelationshipReconciliation.java:272) - ::: [comparePrevInact] @ #	25000
+[Nov 27 09:47:47] INFO  (RelationshipReconciliation.java:272) - ::: [comparePrevInact] @ #	25000
+[Nov 27 09:48:54] INFO  (RelationshipReconciliation.java:248) - 
+::: *** WROTE *** LAPSED TIME =	628.651 (seconds)	 ***
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1064) - Reconciliation - Parameters:
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1065) - Current Relationship files : 
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1068) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1071) - Previous Relationship files : 
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1074) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 09:56:08] INFO  (RelationshipReconciliation.java:1077) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:658) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 09:56:16] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:665) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 09:56:17] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2112	(mS)	0.0352	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 09:57:29] INFO  (RelationshipReconciliation.java:352) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 09:58:15] INFO  (RelationshipReconciliation.java:352) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 09:58:34] INFO  (RelationshipReconciliation.java:352) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 09:59:26] INFO  (RelationshipReconciliation.java:352) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17511
+[Nov 27 10:06:26] INFO  (RelationshipReconciliation.java:248) - 
+::: *** WROTE *** LAPSED TIME =	618.256 (seconds)	 ***
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1069) - Reconciliation - Parameters:
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1070) - Current Relationship files : 
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1073) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1076) - Previous Relationship files : 
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1079) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 10:42:06] INFO  (RelationshipReconciliation.java:1082) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 10:42:11] INFO  (RelationshipReconciliation.java:663) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 10:42:11] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 10:42:11] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 10:42:11] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 10:42:12] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 10:42:13] INFO  (RelationshipReconciliation.java:670) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 10:42:13] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2101	(mS)	0.035016667	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 10:47:32] INFO  (RelationshipReconciliation.java:357) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 10:47:54] INFO  (RelationshipReconciliation.java:357) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 10:47:54] INFO  (RelationshipReconciliation.java:357) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 10:47:54] INFO  (RelationshipReconciliation.java:357) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17511
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1071) - Reconciliation - Parameters:
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1072) - Current Relationship files : 
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1075) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1078) - Previous Relationship files : 
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1081) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 10:56:56] INFO  (RelationshipReconciliation.java:1084) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 10:57:01] INFO  (RelationshipReconciliation.java:665) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 10:57:01] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 10:57:02] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2208	(mS)	0.0368	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 10:57:03] INFO  (RelationshipReconciliation.java:359) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1071) - Reconciliation - Parameters:
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1072) - Current Relationship files : 
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1075) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1078) - Previous Relationship files : 
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1081) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 10:57:22] INFO  (RelationshipReconciliation.java:1084) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 10:57:27] INFO  (RelationshipReconciliation.java:665) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 10:57:27] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 10:57:27] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 10:57:28] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 10:57:29] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 10:57:29] INFO  (RelationshipReconciliation.java:672) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 10:57:29] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2246	(mS)	0.037433334	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1068) - Reconciliation - Parameters:
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1069) - Current Relationship files : 
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1072) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1075) - Previous Relationship files : 
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1078) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 10:59:57] INFO  (RelationshipReconciliation.java:1081) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 11:00:02] INFO  (RelationshipReconciliation.java:660) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 11:00:03] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 11:00:03] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1068) - Reconciliation - Parameters:
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1069) - Current Relationship files : 
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1072) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1075) - Previous Relationship files : 
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1078) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 11:16:02] INFO  (RelationshipReconciliation.java:1081) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 11:16:08] INFO  (RelationshipReconciliation.java:660) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 11:16:15] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 11:16:16] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1068) - Reconciliation - Parameters:
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1069) - Current Relationship files : 
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1072) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1075) - Previous Relationship files : 
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1078) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 12:03:06] INFO  (RelationshipReconciliation.java:1081) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 12:03:18] INFO  (RelationshipReconciliation.java:660) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 12:03:29] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 12:03:29] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 12:05:59] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	169589	(mS)	2.8264835	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 12:06:00] INFO  (RelationshipReconciliation.java:354) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 12:06:34] INFO  (RelationshipReconciliation.java:354) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 12:06:37] INFO  (RelationshipReconciliation.java:354) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 12:06:37] INFO  (RelationshipReconciliation.java:354) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17511
+[Nov 27 12:07:03] INFO  (RelationshipReconciliation.java:245) - 
+::: *** WROTE *** LAPSED TIME =	237.457 (seconds)	 ***
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1068) - Reconciliation - Parameters:
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1069) - Current Relationship files : 
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1072) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1075) - Previous Relationship files : 
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1078) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 27 12:09:42] INFO  (RelationshipReconciliation.java:1081) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 12:09:47] INFO  (RelationshipReconciliation.java:660) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	768617
+::: snorelB.size() = 	887599
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 12:09:48] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:667) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 12:09:49] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2324	(mS)	0.03873333	(min)
+
+::: 
+::: countSame:     	684367
+::: countSameISA:  	463337
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	826178
+::: B == Classifier Solution Set
+::: countB_Diff:   	118982
+::: countB_DiffISA:	0
+::: countB_Total:  	826178
+::: 
+[Nov 27 12:09:55] INFO  (RelationshipReconciliation.java:269) - ::: [comparePrevInact] @ #	25000
+[Nov 27 12:09:58] INFO  (RelationshipReconciliation.java:269) - ::: [comparePrevInact] @ #	25000
+[Nov 27 12:09:58] INFO  (RelationshipReconciliation.java:245) - 
+::: *** WROTE *** LAPSED TIME =	15.775 (seconds)	 ***
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 12:21:45] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:183) - Classification - Parameters:
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:184) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:186) - Previous Relationship files : 
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:189) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:192) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:193) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 12:53:54] INFO  (ChangeConsolidator.java:194) - Release date : 20150131
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:211) - Consolidator - Parameters:
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:212) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:214) - Previous Relationship files : 
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:217) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:220) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:221) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 13:46:22] INFO  (ChangeConsolidator.java:222) - Release date : 20150131
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:212) - Consolidator - Parameters:
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:213) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:215) - Previous Relationship files : 
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:218) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:221) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:222) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 13:52:51] INFO  (ChangeConsolidator.java:223) - Release date : 20150131
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:212) - Consolidator - Parameters:
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:213) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:215) - Previous Relationship files : 
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:218) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:221) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:222) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 13:54:38] INFO  (ChangeConsolidator.java:223) - Release date : 20150131
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:212) - Consolidator - Parameters:
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:213) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:215) - Previous Relationship files : 
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:218) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:221) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:222) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 13:58:56] INFO  (ChangeConsolidator.java:223) - Release date : 20150131
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1039) - Reconciliation - Parameters:
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1040) - Current Relationship files : 
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1043) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1046) - Previous Relationship files : 
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1049) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 17:30:27] INFO  (RelationshipReconciliation.java:1052) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 17:30:32] INFO  (RelationshipReconciliation.java:636) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	886233
+::: snorelB.size() = 	887599
+[Nov 27 17:30:32] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 17:30:32] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 17:30:33] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2864	(mS)	0.047733333	(min)
+
+::: 
+::: countSame:     	694351
+::: countSameISA:  	450383
+::: A == Classifier Output Path
+::: countA_Diff:   	30359
+::: countA_DiffISA:	16448
+::: countA_Total:  	972656
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	973721
+::: 
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:330) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:194) - 
+::: [compareActivesWOMatch()]
+::: [Time] Sort/Compare Input & Output: 	33	(mS)	5.5E-4	(min)
+
+::: 
+::: countSame:     	0
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	0
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	31725
+::: 
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:330) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:194) - 
+::: [compareActivesWOMatch()]
+::: [Time] Sort/Compare Input & Output: 	34	(mS)	5.666667E-4	(min)
+
+::: 
+::: countSame:     	0
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	0
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	31725
+::: 
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:330) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:194) - 
+::: [compareActivesWOMatch()]
+::: [Time] Sort/Compare Input & Output: 	38	(mS)	6.333333E-4	(min)
+
+::: 
+::: countSame:     	0
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	0
+::: B == Classifier Solution Set
+::: countB_Diff:   	31725
+::: countB_DiffISA:	12954
+::: countB_Total:  	31725
+::: 
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:330) - 
+::: [compareActivesWOMatch]
+::: previous active concept size = 	16101
+::: current active concept size = 	17512
+[Nov 27 17:30:34] INFO  (RelationshipReconciliation.java:194) - 
+::: [compareActivesWOMatch()]
+::: [Time] Sort/Compare Input & Output: 	40	(mS)	6.6666666E-4	(min)
+
+::: 
+::: countSame:     	5833
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	5833
+::: B == Classifier Solution Set
+::: countB_Diff:   	25892
+::: countB_DiffISA:	12954
+::: countB_Total:  	31725
+::: 
+[Nov 27 17:30:40] INFO  (RelationshipReconciliation.java:210) - 
+::: [comparePreviousInactives()]
+::: [Time] Sort/Compare Input & Output: 	165	(mS)	0.0027500002	(min)
+
+::: 
+::: countSame:     	0
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	0
+::: B == Classifier Solution Set
+::: countB_Diff:   	25892
+::: countB_DiffISA:	12954
+::: countB_Total:  	25892
+::: 
+[Nov 27 17:30:40] INFO  (RelationshipReconciliation.java:210) - 
+::: [comparePreviousInactives()]
+::: [Time] Sort/Compare Input & Output: 	67	(mS)	0.0011166667	(min)
+
+::: 
+::: countSame:     	0
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	0
+::: B == Classifier Solution Set
+::: countB_Diff:   	25892
+::: countB_DiffISA:	12954
+::: countB_Total:  	25892
+::: 
+[Nov 27 17:30:41] INFO  (RelationshipReconciliation.java:210) - 
+::: [comparePreviousInactives()]
+::: [Time] Sort/Compare Input & Output: 	64	(mS)	0.0010666667	(min)
+
+::: 
+::: countSame:     	1838
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	1838
+::: B == Classifier Solution Set
+::: countB_Diff:   	24054
+::: countB_DiffISA:	11951
+::: countB_Total:  	25892
+::: 
+[Nov 27 17:30:41] INFO  (RelationshipReconciliation.java:210) - 
+::: [comparePreviousInactives()]
+::: [Time] Sort/Compare Input & Output: 	53	(mS)	8.833333E-4	(min)
+
+::: 
+::: countSame:     	582
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	582
+::: B == Classifier Solution Set
+::: countB_Diff:   	23472
+::: countB_DiffISA:	11951
+::: countB_Total:  	24054
+::: 
+[Nov 27 17:30:43] INFO  (RelationshipReconciliation.java:225) - 
+::: *** WROTE *** LAPSED TIME =	16.104 (seconds)	 ***
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1039) - Reconciliation - Parameters:
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1040) - Current Relationship files : 
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1043) - /Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1046) - Previous Relationship files : 
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1049) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20150131.txt
+[Nov 27 17:33:36] INFO  (RelationshipReconciliation.java:1052) - Output Relationship file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 17:33:44] INFO  (RelationshipReconciliation.java:636) - 
+::: [compareActivesAndWriteBack]
+::: snorelA.size() = 	768617
+::: snorelB.size() = 	887599
+[Nov 27 17:33:44] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	25000
+[Nov 27 17:33:44] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	50000
+[Nov 27 17:33:44] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	75000
+[Nov 27 17:33:44] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	100000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	125000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	150000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	175000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	200000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	225000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	250000
+[Nov 27 17:33:45] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	275000
+[Nov 27 17:33:46] INFO  (RelationshipReconciliation.java:643) - ::: [compareActivesAndWriteBack] @ #	300000
+[Nov 27 17:33:46] INFO  (RelationshipReconciliation.java:184) - 
+::: [compareActivesAndWriteBack()]
+::: [Time] Sort/Compare Input & Output: 	2417	(mS)	0.040283334	(min)
+
+::: 
+::: countSame:     	684367
+::: countSameISA:  	463337
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	826178
+::: B == Classifier Solution Set
+::: countB_Diff:   	118982
+::: countB_DiffISA:	0
+::: countB_Total:  	826178
+::: 
+[Nov 27 17:33:54] INFO  (RelationshipReconciliation.java:249) - ::: [comparePrevInact] @ #	25000
+[Nov 27 17:33:54] INFO  (RelationshipReconciliation.java:210) - 
+::: [comparePreviousInactives()]
+::: [Time] Sort/Compare Input & Output: 	393	(mS)	0.00655	(min)
+
+::: 
+::: countSame:     	118982
+::: countSameISA:  	0
+::: A == Classifier Output Path
+::: countA_Diff:   	0
+::: countA_DiffISA:	0
+::: countA_Total:  	118982
+::: B == Classifier Solution Set
+::: countB_Diff:   	0
+::: countB_DiffISA:	0
+::: countB_Total:  	118982
+::: 
+[Nov 27 17:33:54] INFO  (RelationshipReconciliation.java:225) - 
+::: *** WROTE *** LAPSED TIME =	18.132 (seconds)	 ***
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:212) - Consolidator - Parameters:
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:213) - Input file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:215) - Previous Relationship files : 
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:218) - /Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:221) - Snapshot final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:222) - Delta final file : /Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt
+[Nov 27 17:36:00] INFO  (ChangeConsolidator.java:223) - Release date : 20150131

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<current_inferred_relationship_snapshot_files>
+		<file>/Users/ar/Downloads/Archive-2/sct2_InferredRelationship_Snapshot.txt</file>
+	</current_inferred_relationship_snapshot_files>
+	<previous_inferred_relationship_snapshot_files>
+		<file>/Users/ar/Downloads/Archive-2/sct2_Relationship_Snapshot_INT_20140731.txt</file>
+	</previous_inferred_relationship_snapshot_files>
+	<!-- relationship output file -->
+	<relationships_output_file>/Users/ar/Downloads/Archive-2/sct2_Inferred_Reconciliated.txt</relationships_output_file>
+	<end_point_url>http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator</end_point_url>
+	<pass>termmed</pass>
+	<user>snomed11</user>
+	<release_date>20150131</release_date>
+	<namespace>0</namespace>
+	<partition>02</partition>
+	<additional_rels_snapshot_file>/Users/ar/Downloads/Archive-2/sct2_AdditionalRelationship_Snapshot_INT_20150131.txt</additional_rels_snapshot_file>
+	<consolidated_snapshot_file>/Users/ar/Downloads/Archive-2/sct2_Inferred_Snapshot_Reconciliated.txt</consolidated_snapshot_file>
+	<consolidated_delta_file>/Users/ar/Downloads/Archive-2/sct2_Inferred_Delta_Reconciliated.txt</consolidated_delta_file>
+</params>
