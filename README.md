@@ -42,7 +42,15 @@ The process will generate a "logs" folder automatically with debug information.
 ## Reconciliation algorithm
 The process will try to identify a relationshipId for each relationship in the current relationships file, based on the previously released relationships file.
 
+### Relationship Groups reconciliation
+The first step uses group composition matching, ignoring the groupId, to identify previously released groups that have not changed the composition.
+
+If the entire group matches, all the relatiomship ids are inherited from previous release.
+
+### Individual relationships matching
 To identify if the relationship has been published before, the matching process uses an incremental approach, starting with a strict policy, and relaxing the policy in subsequent runs. If after all the steps the relationship was not identified is considered new and it will be assigned a new id.
+
+Individual relationships are matched inside groups, tracking them through different groups and ungrouped state changes.
 
 Steps:
 
