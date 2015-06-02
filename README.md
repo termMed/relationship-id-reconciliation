@@ -31,8 +31,10 @@ Output files:
 ## Running the reconciliation processs
 The main method is located in the class "org.ihtsdo.reconciliation.ReconciliationRunner.java", this should be executed from an IDE at the time, or it can be compiled into an executable jar (not provided in this version).
 
+The process will look for additional parameters in the mandatory "RunConfiguration.xml" file, always located in the project root folder.
+
 Parameters
-* Config file name: points to the name of the configuration file (like "RunConfiguration.xml"), always located in the project root folder.
+
 * -R : will run reconciliation
 * -G : will run Ids generation for new relationships
 * -C : will generate the consolidated Snapshot and Delta files (otherwise it generates only the debug output file)
