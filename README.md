@@ -42,6 +42,10 @@ The process will generate a "logs" folder automatically with debug information.
 ## Reconciliation algorithm
 The process will try to identify a relationshipId for each relationship in the current relationships file, based on the previously released relationships file.
 
+The process includes 4 stages, some of them optional according to the parameters passed to the runner class.
+
+When a relationship or a group matches, it is removed from the candidate set and the following iteration match with the rest of the candidates.
+
 ### Relationship Groups reconciliation
 The first stage uses group composition matching, ignoring the groupId, to identify previously released groups that have not changed the composition.
 
@@ -50,7 +54,7 @@ If the entire group matches, all the relatiomship ids are inherited from previou
 ### Individual relationships matching
 This second stage searches for matches in the remaining relationships.
 
-To identify if the relationship has been published before, the matching process uses an incremental approach, starting with a strict policy, and relaxing the policy in subsequent runs. If after all the steps the relationship was not identified is considered new and it will be assigned a new id.
+To identify individual relationships, the matching process uses an incremental approach, starting with a strict policy, and relaxing the policy in subsequent runs. If after all the steps the relationship was not identified is considered new and it will be assigned a new id.
 
 Individual relationships are matched inside groups, tracking them through different groups and ungrouped state changes.
 
@@ -67,9 +71,17 @@ The runner executes these 4 steps for different sets and resolves remaining rela
 
 1. Current active vs previous active
 3. Current active vs previous inactive
-4. Assign new ids to the current active relationships that were not matched
-5. Inactivate previously released inferred relationships that were not matched
 
-When a relationship or a group matches, it is removed from the candidate set and the following iteration match with the rest of the candidates.
+### Id Assignment 
+In this third stage all relationshps that were not matched get new ids from the Ids Assignment Service.
+
+### Consolidation
+In this fourth stage the process creates Delta and Snapshot files based on the Ids Reconciliation results.
+
+1. Previously inactive relationships that match with current active relationships are reactivated
+2. Inactivate previously released inferred relationships that were not matched
+3. Merge for Delta and Snapshot
+
+
 
 
