@@ -67,12 +67,12 @@ Steps:
 3. Match with: sourceId, typeId, destinationId, groupId
 4. Match with: sourceId, typeId, destinationId
 
-Each time a relationship matches, the id is assigned from the previous release and both reltionships are removed from the candidate sets for the next iterations.
+Each time a relationship matches, the id is assigned from the previous release and both relationships are removed from the candidate sets for the next iterations.
 
 The runner executes these 4 steps for different sets and resolves remaining relationships, first for current active vs previous active and then for current active vs previous inactive.
 
 #### 3. Id Assignment 
-In this third stage all relationshps that were not matched get new ids from the Ids Assignment Service.
+In this third stage all relationshps that were not matched get new ids from the Ids Assignment Service. The UUID in this step is a random UUID, to avoid any colision with other ids assigned in the past or the future.
 
 #### 4. Consolidation
 In this fourth stage the process creates Delta and Snapshot files based on the Ids Reconciliation results.
