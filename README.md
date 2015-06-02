@@ -46,17 +46,17 @@ The process will try to identify a relationshipId for each relationship in the c
 
 The process includes 4 stages, some of them optional according to the parameters passed to the runner class.
 
-When a relationship or a group matches, it is removed from the candidate set and the following iteration match with the rest of the candidates.
+When a relationship or a group matches, it is removed from the candidate set and the following iteration matches with the rest of the candidates.
 
-### Relationship Groups reconciliation
+#### 1. Relationship Groups reconciliation
 The first stage uses group composition matching, ignoring the groupId, to identify previously released groups that have not changed the composition.
 
 If the entire group matches, all the relatiomship ids are inherited from previous release.
 
-### Individual relationships matching
+#### 2. Individual relationships matching
 This second stage searches for matches in the remaining relationships.
 
-To identify individual relationships, the matching process uses an incremental approach, starting with a strict policy, and relaxing the policy in subsequent runs. If after all the steps the relationship was not identified is considered new and it will be assigned a new id.
+To identify individual relationships, the matching process uses an incremental approach, starting with a strict policy, and relaxing the policy in subsequent runs. If, after all the steps the relationship was not identified, its considered new and it will be assigned a new id.
 
 Individual relationships are matched inside groups, tracking them through different groups and ungrouped state changes.
 
@@ -67,17 +67,14 @@ Steps:
 3. Match with: sourceId, typeId, destinationId, groupId
 4. Match with: sourceId, typeId, destinationId
 
-If in any of these steps more than one relationship matches, the first match is assigned the previously published Id, and the rest gets a new Id.
+Each time a relationship matches, the id is assigned from the previous release and both reltionships are removed from the candidate sets for the next iterations.
 
-The runner executes these 4 steps for different sets and resolves remaining relationships:
+The runner executes these 4 steps for different sets and resolves remaining relationships, first for current active vs previous active and then for current active vs previous inactive.
 
-1. Current active vs previous active
-3. Current active vs previous inactive
-
-### Id Assignment 
+#### 3. Id Assignment 
 In this third stage all relationshps that were not matched get new ids from the Ids Assignment Service.
 
-### Consolidation
+#### 4. Consolidation
 In this fourth stage the process creates Delta and Snapshot files based on the Ids Reconciliation results.
 
 1. Previously inactive relationships that match with current active relationships are reactivated
