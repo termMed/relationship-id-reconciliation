@@ -132,6 +132,12 @@ public class RelationshipReconciliation {
 	private BufferedWriter bw;
 
 	private HashMap<Long, ArrayList<Relationship>> tmpNewNoRec;
+	private int sumB_Total;
+	private int sumSameISA;
+	private int sumA_Diff;
+	private int sumA_DiffISA;
+	private int sumB_Diff;
+	private int sumB_DiffISA;
 
 
 	/**
@@ -140,6 +146,12 @@ public class RelationshipReconciliation {
 	public void execute(){
 
 		try {
+			sumB_Total = 0;
+			sumSameISA = 0;
+			sumA_Diff = 0;
+			sumA_DiffISA = 0;
+			sumB_Diff = 0;
+			sumB_DiffISA = 0;
 
 			long startTime = System.currentTimeMillis();
 			previousRelationships = new ArrayList<Relationship>();
@@ -174,8 +186,8 @@ public class RelationshipReconciliation {
 			bw.append("modifierId");
 			bw.append("\r\n");
 
-
 			currentRelationships = new ArrayList<Relationship>();
+			
 			loadActiveInferredRelationship(currentRelationshipsFile,currentRelationships,0);
 
 			previousRelationships = new ArrayList<Relationship>();
@@ -225,7 +237,18 @@ public class RelationshipReconciliation {
 			bw=null;
 			osw=null;
 			fos=null;
-			logger.info("\r\n::: *** WROTE *** LAPSED TIME =\t" + toStringLapseSec(startTime) + "\t ***");
+
+			StringBuilder s = new StringBuilder();
+			s.append("\r\n::: Complete Process statistics:");
+			s.append("\r\n::: Reconciliated relationships:  \t").append(sumB_Total);
+			s.append("\r\n::: Reconciliated Isa's relationships:  \t").append(sumSameISA);
+			s.append("\r\n::: Previous relationships without match :   \t").append(sumA_Diff);
+//			s.append("\r\n::: Previous Isa's relationships without match:\t").append(sumA_DiffISA);
+			s.append("\r\n::: Current relationships without match:   \t").append(sumB_Diff);
+			s.append("\r\n::: Current Isa's relationships without match:\t").append(sumB_DiffISA);
+			s.append("\r\n::: ");
+			s.append("\r\n::: *** WROTE *** LAPSED TIME =\t" + toStringLapseSec(startTime) + "\t ***");
+			logger.info(s.toString());
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -237,11 +260,13 @@ public class RelationshipReconciliation {
 			ArrayList<Relationship> snorelB) 
 					throws  IOException {
 
+		int countChangedGroupNumber = 0;
 		long startTime = System.currentTimeMillis();
-		logger.info("START GROUP NUMBER RECONCILIATION");
+
+		StringBuilder s = new StringBuilder();
+		s.append("\r\n::: [Start group number reconciliation]");
 		Collections.sort(snorelA);
 		Collections.sort(snorelB);
-		int  countConSeen=0;
 		Iterator<Relationship> itA = snorelA.iterator();
 		Iterator<Relationship> itB = snorelB.iterator();
 		Relationship rel_A = null;
@@ -334,9 +359,6 @@ public class RelationshipReconciliation {
 				Integer prevRGNum;
 				Integer currRGNum;
 				if (groupList_B.size() > 0) {
-					if (++countConSeen % 1000 == 0) {
-						logger.info("::: [groupReassignment] @ #\t" + countConSeen + " group list seen for concepts");
-					}
 					for (Integer sgb=0 ;sgb< groupList_B.size();sgb++) {
 						currRGNum=groupList_B.get(sgb).get(0).group;
 						if (currRGNum != 0) {
@@ -344,12 +366,6 @@ public class RelationshipReconciliation {
 								prevRGNum=groupList_A.get(sga).get(0).group;
 								if (prevRGNum != 0 ) {
 
-									if (countConSeen % 10 == 0) {
-										logger.info("::: [groupReassignment] @ #\t" + countConSeen + " distance calc.");
-									}
-									if (groupList_B.get(sgb).get(0).sourceId==151004l){
-										boolean bstop=true;
-									}
 									dist=groupList_B.get(sgb).getDistanceToGroupInSameConcept(groupList_A.get(sga));
 									List<Integer[]> tmplist;
 									if (mapGroups.containsKey(currRGNum)){
@@ -420,7 +436,10 @@ public class RelationshipReconciliation {
 					}
 					for (RelationshipGroup relationshipGroup:groupList_B){
 						for (Relationship relationship:relationshipGroup){
-							relationship.group=endMap.get(relationship.group);
+							if (relationship.group!=endMap.get(relationship.group)){
+								countChangedGroupNumber++;
+								relationship.group=endMap.get(relationship.group);
+							}
 						}
 					}
 				}
@@ -451,8 +470,10 @@ public class RelationshipReconciliation {
 			}
 		}
 
-		long lapseTime = System.currentTimeMillis() - startTime;
-		logger.info("TIME FOR GROUP NUMBER RECONCILIATION:" + ((float) lapseTime / 1000) / 60);
+		s.append("\r\n::: Relationships with group number changes = \t" + countChangedGroupNumber);
+		s.append("\r\n::: [Partial time] Sort/Compare Input & Output: \t" + toStringLapseSec(startTime) + "\t(mS)\t");
+		s.append("\r\n");
+		logger.info(s.toString());
 	}
 
 	private Integer getBestGroupNumber(List<Integer[]> distances,
@@ -493,36 +514,37 @@ public class RelationshipReconciliation {
 	}
 	private String comparePrevInact(int step) throws IOException {
 		// STATISTICS COUNTERS
-		int countConSeen = 0;
-		int countSame = 0;
 		int countSameISA = 0;
 		int countA_Diff = 0;
-		int countA_DiffISA = 0;
-		int countA_Total = 0;
 		int countB_Diff = 0;
 		int countB_DiffISA = 0;
 		int countB_Total = 0;
-
+		int sumPrevInact = 0;
+		int sumNewNoRec = 0;
 		long startTime = System.currentTimeMillis();
+
+
+		StringBuilder s = new StringBuilder();
+		s.append("\r\n::: [Reconciliation by previous inactives vs current actives, without grouping comparation - step:" + step + "]");
 
 		boolean reconciliated=false;
 		for (Long conceptId:newNoRec.keySet()){
-			if (++countConSeen % 25000 == 0) {
-				logger.info("::: [comparePrevInact] @ #\t" + countConSeen);
-			}
 			TreeMap<String, Relationship> relsPrev = prevInact.get(conceptId);
 			ArrayList<Relationship> relsCurr = newNoRec.get(conceptId);
-
+			sumNewNoRec+=relsCurr.size();
 			if (relsPrev!=null){
+				sumPrevInact+=relsPrev.size();
 				for (Relationship relC:relsCurr){
 					reconciliated=false;
 					for (String key:relsPrev.descendingKeySet()){
 						Relationship relP=relsPrev.get(key);
 						if (compareRelsStep(relC, relP,step)) {
 							writeReconciliated(bw,relC,relP);
-							countA_Total++;
+
 							countB_Total++;
-							countSame++;
+							if (relC.typeId == isa) {
+								countSameISA++;
+							}
 							reconciliated=true;
 							relsPrev.remove(key);
 							break;
@@ -530,7 +552,6 @@ public class RelationshipReconciliation {
 					}
 					if(!reconciliated){
 						countB_Diff++;
-						countB_Total++;
 						if (relC.typeId == isa) {
 							countB_DiffISA++;
 						}
@@ -541,7 +562,6 @@ public class RelationshipReconciliation {
 			}else{
 				for (Relationship relC:relsCurr){
 					countB_Diff++;
-					countB_Total++;
 					if (relC.typeId == isa) {
 						countB_DiffISA++;
 					}
@@ -552,64 +572,64 @@ public class RelationshipReconciliation {
 
 		}
 
-		StringBuilder s = new StringBuilder();
-		s.append("\r\n::: [comparePreviousInactives()]");
-		long lapseTime = System.currentTimeMillis() - startTime;
-		s.append("\r\n::: [Time] Sort/Compare Input & Output: \t").append(lapseTime);
-		s.append("\t(mS)\t").append(((float) lapseTime / 1000) / 60).append("\t(min)");
-		s.append("\r\n");
-		s.append("\r\n::: ");
-		s.append("\r\n::: countSame:     \t").append(countSame);
-		s.append("\r\n::: countSameISA:  \t").append(countSameISA);
-		s.append("\r\n::: A == Classifier Output Path");
-		s.append("\r\n::: countA_Diff:   \t").append(countA_Diff);
-		s.append("\r\n::: countA_DiffISA:\t").append(countA_DiffISA);
-		s.append("\r\n::: countA_Total:  \t").append(countA_Total);
-		s.append("\r\n::: B == Classifier Solution Set");
-		s.append("\r\n::: countB_Diff:   \t").append(countB_Diff);
-		s.append("\r\n::: countB_DiffISA:\t").append(countB_DiffISA);
-		s.append("\r\n::: countB_Total:  \t").append(countB_Total);
+
+		s.append("\r\n::: Current active relationships to reconciliate = \t" + sumNewNoRec);
+		s.append("\r\n::: Candidate previous inactive relationships to match = \t" + sumPrevInact);
+		
+		s.append("\r\n::: Partial process statistics:");
+		s.append("\r\n::: Reconciliated relationships:  \t").append(countB_Total);
+		s.append("\r\n::: Reconciliated Isa's relationships:  \t").append(countSameISA);
+		s.append("\r\n::: Previous relationships without match :   \t").append(countA_Diff);
+		s.append("\r\n::: Current relationships without match:   \t").append(countB_Diff);
+		s.append("\r\n::: Current Isa's relationships without match:\t").append(countB_DiffISA);
 		s.append("\r\n::: ");
 
+		long lapseTime = System.currentTimeMillis() - startTime;
+		s.append("\r\n::: [Partial time] Sort/Compare Input & Output: \t").append(lapseTime);
+		s.append("\t(mS)\t");
+		s.append("\r\n");
+
+		sumB_Total+=countB_Total;
+		sumSameISA+=countSameISA;
+		sumA_Diff=countA_Diff;
+		sumB_Diff=countB_Diff;
+		sumB_DiffISA=countB_DiffISA;
+		
 		return s.toString();
 	}
 
 	private String compareActivesWOMatch(  int step) throws IOException {
 		// STATISTICS COUNTERS
-		int countConSeen = 0;
-		int countSame = 0;
 		int countSameISA = 0;
 		int countA_Diff = 0;
-		int countA_DiffISA = 0;
-		int countA_Total = 0;
 		int countB_Diff = 0;
 		int countB_DiffISA = 0;
 		int countB_Total = 0;
-
+		int sumNewNoRec = 0;
+		int sumPrevActNowRet = 0 ;
 		long startTime = System.currentTimeMillis();
 
-
-		logger.info("\r\n::: [compareActivesWOMatch]"
-				+ "\r\n::: previous active concept size = \t" + prevActNowRet.size()
-				+ "\r\n::: current active concept size = \t" + newNoRec.size());
-
+		StringBuilder s = new StringBuilder();
+		s.append("\r\n::: [Reconciliation by previous actives vs current actives, without grouping comparation - step:" + step + "]");
 
 		boolean reconciliated=false;
 		for (Long conceptId:newNoRec.keySet()){
-			if (++countConSeen % 25000 == 0) {
-				logger.info("::: [compareActivesWOMatch] @ #\t" + countConSeen);
-			}
+			
 			ArrayList<Relationship> relsPrev = prevActNowRet.get(conceptId);
 			ArrayList<Relationship> relsCurr = newNoRec.get(conceptId);
+
+			sumNewNoRec+=relsCurr.size();
 			if (relsPrev!=null){
+				sumPrevActNowRet+=relsPrev.size();
 				for (Relationship relC:relsCurr){
 					reconciliated=false;
 					for (Relationship relP:relsPrev){
 						if (compareRelsStep(relC, relP,step)) {
 							writeReconciliated(bw,relC,relP);
-							countA_Total++;
 							countB_Total++;
-							countSame++;
+							if (relC.typeId == isa) {
+								countSameISA++;
+							}
 							reconciliated=true;
 							relsPrev.remove(relP);
 							break;
@@ -617,18 +637,18 @@ public class RelationshipReconciliation {
 					}
 					if(!reconciliated){
 						countB_Diff++;
-						countB_Total++;
 						if (relC.typeId == isa) {
 							countB_DiffISA++;
 						}
 						writeNewNoRec(relC);
 					}
 				}
+
+				countA_Diff+=relsPrev.size();
 				prevActNowRet.put(conceptId, relsPrev);
 			}else{
 				for (Relationship relC:relsCurr){
 					countB_Diff++;
-					countB_Total++;
 					if (relC.typeId == isa) {
 						countB_DiffISA++;
 					}
@@ -638,25 +658,28 @@ public class RelationshipReconciliation {
 
 		}
 
-		StringBuilder s = new StringBuilder();
-		s.append("\r\n::: [compareActivesWOMatch()]");
-		long lapseTime = System.currentTimeMillis() - startTime;
-		s.append("\r\n::: [Time] Sort/Compare Input & Output: \t").append(lapseTime);
-		s.append("\t(mS)\t").append(((float) lapseTime / 1000) / 60).append("\t(min)");
-		s.append("\r\n");
-		s.append("\r\n::: ");
-		s.append("\r\n::: countSame:     \t").append(countSame);
-		s.append("\r\n::: countSameISA:  \t").append(countSameISA);
-		s.append("\r\n::: A == Classifier Output Path");
-		s.append("\r\n::: countA_Diff:   \t").append(countA_Diff);
-		s.append("\r\n::: countA_DiffISA:\t").append(countA_DiffISA);
-		s.append("\r\n::: countA_Total:  \t").append(countA_Total);
-		s.append("\r\n::: B == Classifier Solution Set");
-		s.append("\r\n::: countB_Diff:   \t").append(countB_Diff);
-		s.append("\r\n::: countB_DiffISA:\t").append(countB_DiffISA);
-		s.append("\r\n::: countB_Total:  \t").append(countB_Total);
+		s.append("\r\n::: Current active relationships to reconciliate = \t" + sumNewNoRec);
+		s.append("\r\n::: Candidate previous active relationships to match = \t" + sumPrevActNowRet);
+		
+		s.append("\r\n::: Partial process statistics:");
+		s.append("\r\n::: Reconciliated relationships:  \t").append(countB_Total);
+		s.append("\r\n::: Reconciliated Isa's relationships:  \t").append(countSameISA);
+		s.append("\r\n::: Previous relationships without match :   \t").append(countA_Diff);
+		s.append("\r\n::: Current relationships without match:   \t").append(countB_Diff);
+		s.append("\r\n::: Current Isa's relationships without match:\t").append(countB_DiffISA);
 		s.append("\r\n::: ");
 
+		long lapseTime = System.currentTimeMillis() - startTime;
+		s.append("\r\n::: [Partial time] Sort/Compare Input & Output: \t").append(lapseTime);
+		s.append("\t(mS)\t");
+		s.append("\r\n");
+
+		sumB_Total+=countB_Total;
+		sumSameISA+=countSameISA;
+		sumA_Diff=countA_Diff;
+		sumB_Diff=countB_Diff;
+		sumB_DiffISA=countB_DiffISA;
+		
 		return s.toString();
 	}
 
@@ -864,15 +887,12 @@ public class RelationshipReconciliation {
 			throws  IOException {
 
 		// STATISTICS COUNTERS
-		int countConSeen = 0;
-		int countSame = 0;
-		int countSameISA = 0;
 		int countA_Diff = 0;
 		int countA_DiffISA = 0;
-		int countA_Total = 0;
 		int countB_Diff = 0;
 		int countB_DiffISA = 0;
 		int countB_Total = 0;
+		int countSameISA = 0;
 
 		long startTime = System.currentTimeMillis();
 		Collections.sort(snorelA);
@@ -895,15 +915,13 @@ public class RelationshipReconciliation {
 			done_B = true;
 		}
 
-		logger.info("\r\n::: [compareActivesAndWriteBack]"
-				+ "\r\n::: snorelA.size() = \t" + snorelA.size()
-				+ "\r\n::: snorelB.size() = \t" + snorelB.size());
+		StringBuilder s = new StringBuilder();
+		s.append("\r\n::: [Reconciliation by previous actives vs current actives, ungrouped and grouped comparation]"
+				+ "\r\n::: Previous active relationships to match = \t" + snorelA.size()
+				+ "\r\n::: Current active relationships to match = \t" + snorelB.size());
 
 		// BY SORT ORDER, LOWER NUMBER ADVANCES FIRST
 		while (!done_A && !done_B) {
-			if (++countConSeen % 25000 == 0) {
-				logger.info("::: [compareActivesAndWriteBack] @ #\t" + countConSeen);
-			}
 
 			if (rel_A.sourceId == rel_B.sourceId) {
 				// COMPLETELY PROCESS ALL C1 FOR BOTH IN & OUT
@@ -918,10 +936,7 @@ public class RelationshipReconciliation {
 					case 1: // SAME
 						// GATHER STATISTICS
 						writeReconciliated(bw,rel_B,rel_A);
-						countA_Total++;
 						countB_Total++;
-						countSame++;
-						// NOTHING TO WRITE IN THIS CASE
 						if (rel_A.typeId == isa) {
 							countSameISA++;
 						}
@@ -938,9 +953,7 @@ public class RelationshipReconciliation {
 						break;
 
 					case 2: // REL_A > REL_B -- B has extra stuff
-						// WRITEBACK REL_B (Classifier Results) AS CURRENT
 						countB_Diff++;
-						countB_Total++;
 						if (rel_B.typeId == isa) {
 							countB_DiffISA++;
 						}
@@ -954,10 +967,8 @@ public class RelationshipReconciliation {
 						break;
 
 					case 3: // REL_A < REL_B -- A has extra stuff
-						// WRITEBACK REL_A (Classifier Input) AS RETIRED
 						// GATHER STATISTICS
 						countA_Diff++;
-						countA_Total++;
 						if (rel_A.typeId == isa) {
 							countA_DiffISA++;
 						}
@@ -976,7 +987,6 @@ public class RelationshipReconciliation {
 				while (rel_A.sourceId == thisC1 && rel_A.group == 0 && !done_A) {
 
 					countA_Diff++;
-					countA_Total++;
 					if (rel_A.typeId == isa) {
 						countA_DiffISA++;
 					}
@@ -992,7 +1002,6 @@ public class RelationshipReconciliation {
 				// REMAINDER LIST_B GROUP 0 FOR C1
 				while (rel_B.sourceId == thisC1 && rel_B.group == 0 && !done_B) {
 					countB_Diff++;
-					countB_Total++;
 					if (rel_B.typeId == isa) {
 						countB_DiffISA++;
 					}
@@ -1047,57 +1056,53 @@ public class RelationshipReconciliation {
 				}
 
 				// FIND GROUPS IN GROUPLIST_A WITHOUT AN EQUAL IN GROUPLIST_B
-				// WRITE THESE GROUPED RELS AS "RETIRED"
 				RelationshipGroupList groupList_NotEqual;
 				if (groupList_A.size() > 0) {
 					groupList_NotEqual = groupList_A.whichNotEqual(groupList_B);
 					for (RelationshipGroup sg : groupList_NotEqual) {
 						for (Relationship sr_A : sg) {
+
+							countA_Diff++;
 							writePrevActNowRet(sr_A);
 						}
 					}
-					countA_Total += groupList_A.countRels();
-					countA_Diff += groupList_NotEqual.countRels();
 				}
 
 				// FIND GROUPS IN GROUPLIST_B WITHOUT AN EQUAL IN GROUPLIST_A
-				// WRITE THESE GROUPED RELS AS "NEW, CURRENT"
-				//				int rgNum = 0; // USED TO DETERMINE "AVAILABLE" ROLE GROUP NUMBERS
 				if (groupList_B.size() > 0) {
 					groupList_NotEqual = groupList_B.whichNotEqual(groupList_A);
 					for (RelationshipGroup sg : groupList_NotEqual) {
 						if (sg.get(0).group != 0) {
-							//							rgNum = nextRoleGroupNumber(groupList_A, rgNum);
 							for (Relationship sr_B : sg) {
-								//								sr_B.group = rgNum;
+								countB_Diff++;
 								writeNewNoRec(sr_B);
 							}
 						} else {
 							for (Relationship sr_B : sg) {
+
+								countB_Diff++;
 								writeNewNoRec(sr_B);
 							}
 						}
 					}
-					countB_Total += groupList_A.countRels();
-					countB_Diff += groupList_NotEqual.countRels();
 				}
 				if (groupList_A.size() > 0 && groupList_B.size() > 0) {
 					Map	<Relationship,Relationship> relsMap;
 					relsMap = groupList_B.getEqualRelationshipInGroup(groupList_A);
 					for (Relationship sr_B : relsMap.keySet()) {
+						countB_Total++;
+						if (rel_B.typeId == isa) {
+							countSameISA++;
+						}
 						writeReconciliated(bw,sr_B,relsMap.get(sr_B));
+
 					}
-					countA_Total++;
-					countB_Total++;
-					countSame++;
 				}
 			} else if (rel_A.sourceId > rel_B.sourceId) {
 				// CASE 2: LIST_B HAS CONCEPT NOT IN LIST_A
-				// COMPLETELY *ADD* ALL THIS C1 FOR REL_B AS NEW, CURRENT
 				long thisC1 = rel_B.sourceId;
 				while (rel_B.sourceId == thisC1) {
 					countB_Diff++;
-					countB_Total++;
 					if (rel_B.typeId == isa) {
 						countB_DiffISA++;
 					}
@@ -1112,11 +1117,9 @@ public class RelationshipReconciliation {
 
 			} else {
 				// CASE 3: LIST_A HAS CONCEPT NOT IN LIST_B
-				// COMPLETELY *RETIRE* ALL THIS C1 FOR REL_A
 				long thisC1 = rel_A.sourceId;
 				while (rel_A.sourceId == thisC1) {
 					countA_Diff++;
-					countA_Total++;
 					if (rel_A.typeId == isa) {
 						countA_DiffISA++;
 					}
@@ -1135,17 +1138,13 @@ public class RelationshipReconciliation {
 		// AND, EITHER REL_A OR REL_B HAS BEEN COMPLETELY PROCESSED
 		// AND, ANY REMAINDER IS ONLY ON REL_LIST_A OR ONLY ON REL_LIST_B
 		// AND, THAT REMAINDER HAS A "STANDALONE" C1 VALUE
-		// THEREFORE THAT REMAINDER WRITEBACK COMPLETELY
-		// AS "NEW CURRENT" OR "OLD RETIRED"
 		//
 		// LASTLY, IF .NOT.DONE_A THEN THE NEXT REL_A IN ALREADY IN PLACE
 		while (!done_A) {
 			countA_Diff++;
-			countA_Total++;
 			if (rel_A.typeId == isa) {
 				countA_DiffISA++;
 			}
-			// COMPLETELY UPDATE ALL REMAINING REL_A AS RETIRED
 			writePrevActNowRet(rel_A);
 			if (itA.hasNext()) {
 				rel_A = itA.next();
@@ -1157,11 +1156,9 @@ public class RelationshipReconciliation {
 
 		while (!done_B) {
 			countB_Diff++;
-			countB_Total++;
 			if (rel_B.typeId == isa) {
 				countB_DiffISA++;
 			}
-			// COMPLETELY UPDATE ALL REMAINING REL_B AS NEW, CURRENT
 			writeNewNoRec(rel_B);
 			if (itB.hasNext()) {
 				rel_B = itB.next();
@@ -1171,26 +1168,26 @@ public class RelationshipReconciliation {
 			}
 		}
 
-
-		StringBuilder s = new StringBuilder();
-		s.append("\r\n::: [compareActivesAndWriteBack()]");
+		s.append("\r\n::: Partial process statistics:");
+		s.append("\r\n::: Reconciliated relationships:  \t").append(countB_Total);
+		s.append("\r\n::: Reconciliated Isa's relationships:  \t").append(countSameISA);
+		s.append("\r\n::: Previous relationships without match :   \t").append(countA_Diff);
+//		s.append("\r\n::: Previous Isa's relationships without match:\t").append(countA_DiffISA);
+		s.append("\r\n::: Current relationships without match:   \t").append(countB_Diff);
+		s.append("\r\n::: Current Isa's relationships without match:\t").append(countB_DiffISA);
+		s.append("\r\n::: ");
 		long lapseTime = System.currentTimeMillis() - startTime;
-		s.append("\r\n::: [Time] Sort/Compare Input & Output: \t").append(lapseTime);
-		s.append("\t(mS)\t").append(((float) lapseTime / 1000) / 60).append("\t(min)");
+		s.append("\r\n::: [Partial time] Sort/Compare Input & Output: \t").append(lapseTime);
+		s.append("\t(mS)\t");
 		s.append("\r\n");
-		s.append("\r\n::: ");
-		s.append("\r\n::: countSame:     \t").append(countSame);
-		s.append("\r\n::: countSameISA:  \t").append(countSameISA);
-		s.append("\r\n::: A == Classifier Output Path");
-		s.append("\r\n::: countA_Diff:   \t").append(countA_Diff);
-		s.append("\r\n::: countA_DiffISA:\t").append(countA_DiffISA);
-		s.append("\r\n::: countA_Total:  \t").append(countA_Total);
-		s.append("\r\n::: B == Classifier Solution Set");
-		s.append("\r\n::: countB_Diff:   \t").append(countB_Diff);
-		s.append("\r\n::: countB_DiffISA:\t").append(countB_DiffISA);
-		s.append("\r\n::: countB_Total:  \t").append(countB_Total);
-		s.append("\r\n::: ");
-
+		
+		sumB_Total+=countB_Total;
+		sumSameISA+=countSameISA;
+		sumA_Diff+=countA_Diff;
+//		sumA_DiffISA+=countA_DiffISA;
+		sumB_Diff+=countB_Diff;
+		sumB_DiffISA+=countB_DiffISA;
+		
 		return s.toString();
 	}
 

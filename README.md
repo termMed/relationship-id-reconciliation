@@ -83,6 +83,189 @@ In this fourth stage the process creates Delta and Snapshot files based on the I
 2. Inactivate previously released inferred relationships that were not matched
 3. Merge for Delta and Snapshot
 
+## Testing / Demonstration
+The project includes junit tests that run the algorithm from specific test resources, sets of relationships prepared to demonstrate the effect.
+
+Example output for groupId reconciliation example dataset:
+```
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1266) - Reconciliation - Parameters:
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1267) - Current Relationship files : 
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1270) - src/test/resources/org/ihtsdo/reconciliation/test/GroupNumberReconciliation_Current_File.txt
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1273) - Previous Relationship files : 
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1276) - src/test/resources/org/ihtsdo/reconciliation/test/GroupNumberReconciliation_Prev_File.txt
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1279) - Output Relationship file : src/test/resources/org/ihtsdo/reconciliation/test/GroupNumber_Inferred_Reconciliated.txt
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:476) - 
+::: [Start group number reconciliation]
+::: Relationships with group number changes = 	6
+::: [Partial time] Sort/Compare Input & Output: 	0.0020 (seconds)	(mS)	
+
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:199) - 
+::: [Reconciliation by previous actives vs current actives, ungrouped and grouped comparation]
+::: Previous active relationships to match = 	11
+::: Current active relationships to match = 	11
+::: Partial process statistics:
+::: Reconciliated relationships:  	11
+::: Reconciliated Isa's relationships:  	3
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	0
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	1	(mS)	
+
+[jun 04 17:50:27] INFO  (RelationshipReconciliation.java:251) - 
+::: Complete Process statistics:
+::: Reconciliated relationships:  	11
+::: Reconciliated Isa's relationships:  	3
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	0
+::: Current Isa's relationships without match:	0
+::: 
+::: *** WROTE *** LAPSED TIME =	0.02 (seconds)	 ***
+```
+
+Example output for relationshipIds reconciliation example dataset:
+```
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1266) - Reconciliation - Parameters:
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1267) - Current Relationship files : 
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1270) - src/test/resources/org/ihtsdo/reconciliation/test/IdReconciliation_Current_File.txt
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1273) - Previous Relationship files : 
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1276) - src/test/resources/org/ihtsdo/reconciliation/test/IdReconciliation_Prev_File.txt
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1279) - Output Relationship file : src/test/resources/org/ihtsdo/reconciliation/test/Id_Inferred_Reconciliated.txt
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:476) - 
+::: [Start group number reconciliation]
+::: Relationships with group number changes = 	6
+::: [Partial time] Sort/Compare Input & Output: 	0.0010 (seconds)	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:199) - 
+::: [Reconciliation by previous actives vs current actives, ungrouped and grouped comparation]
+::: Previous active relationships to match = 	9
+::: Current active relationships to match = 	12
+::: Partial process statistics:
+::: Reconciliated relationships:  	6
+::: Reconciliated Isa's relationships:  	4
+::: Previous relationships without match :   	3
+::: Current relationships without match:   	6
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:209) - 
+::: [Reconciliation by previous actives vs current actives, without grouping comparation - step:1]
+::: Current active relationships to reconciliate = 	6
+::: Candidate previous active relationships to match = 	3
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	3
+::: Current relationships without match:   	6
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:209) - 
+::: [Reconciliation by previous actives vs current actives, without grouping comparation - step:2]
+::: Current active relationships to reconciliate = 	6
+::: Candidate previous active relationships to match = 	3
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	3
+::: Current relationships without match:   	6
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:209) - 
+::: [Reconciliation by previous actives vs current actives, without grouping comparation - step:3]
+::: Current active relationships to reconciliate = 	6
+::: Candidate previous active relationships to match = 	3
+::: Partial process statistics:
+::: Reconciliated relationships:  	2
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	1
+::: Current relationships without match:   	4
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:209) - 
+::: [Reconciliation by previous actives vs current actives, without grouping comparation - step:4]
+::: Current active relationships to reconciliate = 	4
+::: Candidate previous active relationships to match = 	1
+::: Partial process statistics:
+::: Reconciliated relationships:  	1
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:225) - 
+::: [Reconciliation by previous inactives vs current actives, without grouping comparation - step:1]
+::: Current active relationships to reconciliate = 	3
+::: Candidate previous inactive relationships to match = 	9
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	1	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:225) - 
+::: [Reconciliation by previous inactives vs current actives, without grouping comparation - step:2]
+::: Current active relationships to reconciliate = 	3
+::: Candidate previous inactive relationships to match = 	9
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	1	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:225) - 
+::: [Reconciliation by previous inactives vs current actives, without grouping comparation - step:3]
+::: Current active relationships to reconciliate = 	3
+::: Candidate previous inactive relationships to match = 	9
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:225) - 
+::: [Reconciliation by previous inactives vs current actives, without grouping comparation - step:4]
+::: Current active relationships to reconciliate = 	3
+::: Candidate previous inactive relationships to match = 	9
+::: Partial process statistics:
+::: Reconciliated relationships:  	0
+::: Reconciliated Isa's relationships:  	0
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: [Partial time] Sort/Compare Input & Output: 	0	(mS)	
+
+[jun 04 17:51:28] INFO  (RelationshipReconciliation.java:251) - 
+::: Complete Process statistics:
+::: Reconciliated relationships:  	9
+::: Reconciliated Isa's relationships:  	4
+::: Previous relationships without match :   	0
+::: Current relationships without match:   	3
+::: Current Isa's relationships without match:	0
+::: 
+::: *** WROTE *** LAPSED TIME =	0.014 (seconds)	 ***
+```
+
+termMed 2015
+
 
 
 
