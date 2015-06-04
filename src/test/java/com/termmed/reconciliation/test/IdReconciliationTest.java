@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.test;
 
 import java.io.BufferedReader;
@@ -17,8 +25,20 @@ import com.termmed.reconciliation.RelationshipReconciliation;
 import com.termmed.reconciliation.model.Relationship;
 import com.termmed.reconciliation.utils.I_Constants;
 
+
+/**
+ * The class IdReconciliationTest.
+ *
+ * @author Alejandro Rodriguez.
+ * @version 1.0
+ */
 public class IdReconciliationTest extends TestCase {
 
+	/**
+	 * Test id reconciliation.
+	 *
+	 * @throws Exception the exception
+	 */
 	public void testIdReconciliation() throws Exception{
 		File TestGroupMumberReconciliationFile=new File("src/test/resources/com/termmed/reconciliation/test/IdReconciliationConfig.xml");
 
@@ -49,6 +69,14 @@ public class IdReconciliationTest extends TestCase {
 		}
 
 	}
+	
+	/**
+	 * Exists same triple without id.
+	 *
+	 * @param prevRelationship the prev relationship
+	 * @param outputRelationships the output relationships
+	 * @return true, if successful
+	 */
 	private boolean existsSameTripleWithoutId(Relationship prevRelationship, ArrayList<Relationship> outputRelationships) {
 
 		for (Relationship outputRelationship:outputRelationships){
@@ -61,6 +89,14 @@ public class IdReconciliationTest extends TestCase {
 		}
 		return false;
 	}
+	
+	/**
+	 * Gets the same reconciled rel.
+	 *
+	 * @param relationship the relationship
+	 * @param outputRelationships the output relationships
+	 * @return the same reconciled rel
+	 */
 	private Relationship getSameReconciledRel(Relationship relationship,
 			ArrayList<Relationship> outputRelationships) {
 		
@@ -71,6 +107,15 @@ public class IdReconciliationTest extends TestCase {
 		}
 		return null;
 	}
+	
+	/**
+	 * Load output inferred relationship.
+	 *
+	 * @param relationshipFiles the relationship files
+	 * @param rels the rels
+	 * @param i the i
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public  void loadOutputInferredRelationship( String[] relationshipFiles,ArrayList<Relationship> rels, int i)throws IOException {
 
 		String line;
@@ -116,6 +161,14 @@ public class IdReconciliationTest extends TestCase {
 			rbr=null;
 		}
 	}
+	
+	/**
+	 * Gets the previous file.
+	 *
+	 * @param configFile the config file
+	 * @return the previous file
+	 * @throws ConfigurationException the configuration exception
+	 */
 	private String[] getPreviousFile(File configFile) throws ConfigurationException {
 		XMLConfiguration xmlConfig;
 		String[] previousInferredRelationshipsFile=null;
@@ -129,6 +182,13 @@ public class IdReconciliationTest extends TestCase {
 		return previousInferredRelationshipsFile;
 	}
 
+	/**
+	 * Gets the output file.
+	 *
+	 * @param configFile the config file
+	 * @return the output file
+	 * @throws ConfigurationException the configuration exception
+	 */
 	private String getOutputFile(File configFile) throws ConfigurationException {
 		XMLConfiguration xmlConfig;
 		

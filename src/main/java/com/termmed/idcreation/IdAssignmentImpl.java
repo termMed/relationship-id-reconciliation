@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.idcreation;
 
 import java.io.File;
@@ -38,12 +46,24 @@ import org.ihtsdo.idgen.ws.data.SCTIDResponse;
 import org.ihtsdo.idgen.ws.data.SNOMEDIDRequest;
 import org.ihtsdo.idgen.ws.data.SNOMEDIDResponse;
 
+
+/**
+ * The Class IdAssignmentImpl.
+ */
 public class IdAssignmentImpl implements IdAssignmentBI {
 
+	/** The target endpoint. */
 	private String targetEndpoint = "http://mgr.servers.aceworkspace.net:50002/axis2/services/id_generator";
+	
+	/** The id gen stub. */
 	private Id_generatorStub idGenStub;
+	
+	/** The Constant WEB_SERVICE_IMPL. */
 	private static final String WEB_SERVICE_IMPL = "WebServiceImplementation";
 
+	/**
+	 * Instantiates a new id assignment impl.
+	 */
 	public IdAssignmentImpl() {
 		super();
 		try {
@@ -60,6 +80,11 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		}
 	}
 
+	/**
+	 * Instantiates a new id assignment impl.
+	 *
+	 * @param propertiesFile the properties file
+	 */
 	public IdAssignmentImpl(File propertiesFile) {
 		Properties props = new Properties();
 		try {
@@ -73,6 +98,13 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		}
 	}
 
+	/**
+	 * Instantiates a new id assignment impl.
+	 *
+	 * @param targetEndpoint the target endpoint
+	 * @param user the user
+	 * @param password the password
+	 */
 	public IdAssignmentImpl(String targetEndpoint, String user, String password) {
 		super();
 		this.targetEndpoint = targetEndpoint;
@@ -83,6 +115,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#getSCTID(java.util.UUID)
+	 */
 	public Long getSCTID(UUID componentUuid) throws Exception {
 		SCTIDRequest request = new SCTIDRequest();
 		request.setComponentUuid(componentUuid.toString());
@@ -99,6 +134,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#getSNOMEDID(java.util.UUID)
+	 */
 	public String getSNOMEDID(UUID componentUuid) throws Exception {
 		SNOMEDIDRequest request = new SNOMEDIDRequest();
 		request.setComponentUuid(componentUuid.toString());
@@ -109,6 +147,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return resonse.getSnomedid();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#getCTV3ID(java.util.UUID)
+	 */
 	public String getCTV3ID(UUID componentUuid) throws Exception {
 		CTV3IDRequest request = new CTV3IDRequest();
 		request.setComponentUuid(componentUuid.toString());
@@ -119,6 +160,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return ctv3id.getCtv3Id();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#getSCTIDList(java.util.List)
+	 */
 	public HashMap<UUID, Long> getSCTIDList(List<UUID> componentUuidList) throws Exception {
 		long soTimeout = 3 * 60 * 1000;
 		idGenStub._getServiceClient().getOptions().setTimeOutInMilliSeconds(soTimeout);
@@ -144,6 +188,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return result;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createSCTID(java.util.UUID, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public Long createSCTID(UUID componentUuid, Integer namespaceId, String partitionId, String releaseId, String executionId, String moduleId) throws Exception {
 		CreateSCTIDRequest request = new CreateSCTIDRequest();
 		request.setComponentUuid(componentUuid.toString());
@@ -165,6 +212,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createSNOMEDID(java.util.UUID, java.lang.String)
+	 */
 	public String createSNOMEDID(UUID componentUuid, String parentSnomedId) throws Exception {
 		CreateSNOMEDIDRequest request = new CreateSNOMEDIDRequest();
 
@@ -177,6 +227,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return response.getSnomedId();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createCTV3ID(java.util.UUID)
+	 */
 	public String createCTV3ID(UUID componentUuid) throws Exception {
 		CreateCTV3IDRequest request = new CreateCTV3IDRequest();
 		request.setComponentUuid(componentUuid.toString());
@@ -186,6 +239,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return response.getCtv3Id();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createSCTIDList(java.util.List, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public HashMap<UUID, Long> createSCTIDList(List<UUID> componentUuidList, Integer namespaceId, String partitionId, String releaseId, String executionId, String moduleId) throws Exception {
 		long soTimeout = 10 * 60 * 1000;
 		idGenStub._getServiceClient().getOptions().setTimeOutInMilliSeconds(soTimeout);
@@ -218,6 +274,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return result;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createConceptIDList(java.util.HashMap, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public HashMap<UUID, HashMap<IDENTIFIER, String>> createConceptIDList(HashMap<UUID, String> componentUuidParentSnoId, Integer namespaceId, String partitionId, String releaseId,
 			String executionId, String moduleId) throws Exception {
 		CreateConceptIDListRequest request = new CreateConceptIDListRequest();
@@ -260,6 +319,9 @@ public class IdAssignmentImpl implements IdAssignmentBI {
 		return result;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.idcreation.IdAssignmentBI#createConceptIds(java.util.UUID, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public HashMap<IDENTIFIER, String> createConceptIds(UUID componentUuid, String parentSnomedId, Integer namespaceId, String partitionId, String releaseId, String executionId, String moduleId)
 			throws Exception {
 		CreateConceptIdsRequest request = new CreateConceptIdsRequest();

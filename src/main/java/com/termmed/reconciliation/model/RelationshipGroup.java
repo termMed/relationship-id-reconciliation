@@ -1,19 +1,12 @@
 /**
- * Copyright (c) 2009 International Health Terminology Standards Development
- * Organisation
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
  */
+
 package com.termmed.reconciliation.model;
 
 import java.util.ArrayList;
@@ -21,23 +14,24 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+
 /**
  * The Class RelationshipGroup.
- * Represents a relationships list.
+ * 
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
  */
 public class RelationshipGroup extends ArrayList<Relationship> {
     
     /** The Constant serialVersionUID. */
     private static final long serialVersionUID = 1L;
     
-    /** The Constant debug. */
-    private static final boolean debug = false; // :DEBUG:
-
     /**
-     * Instantiates a new sno grp.
+     * Instantiates a new relationship group.
      *
-     * @param relationships the relationships list
-     * @param sort true if the list needs to be sorted
+     * @param relationships the relationships
+     * @param sort the sort
      */
     public RelationshipGroup(List<Relationship> relationships, boolean sort) {
         super();
@@ -49,7 +43,7 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     }
 
     /**
-     * Instantiates a new sno grp.
+     * Instantiates a new relationship group.
      *
      * @param o the o
      */
@@ -59,7 +53,7 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     }
 
     /**
-     * Instantiates a new sno grp.
+     * Instantiates a new relationship group.
      */
     public RelationshipGroup() {
         super();
@@ -69,7 +63,7 @@ public class RelationshipGroup extends ArrayList<Relationship> {
      * Adds the all with sort.
      *
      * @param roleGroupB the role group b
-     * @return the sno grp
+     * @return the relationship group
      */
     public RelationshipGroup addAllWithSort(RelationshipGroup roleGroupB) {
 
@@ -102,7 +96,7 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     /**
      * Sort by type.
      *
-     * @return the sno grp
+     * @return the relationship group
      */
     public RelationshipGroup sortByType() {
         // SORT BY [ROLE-C2-GROUP-C2]
@@ -130,14 +124,10 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     }
 
     /**
-     * Does roleGroupA Role-Value match roleGroupB Role-Values?<br>
-     * <br>
-     * <font color=#990099> IMPLEMENTATION NOTE: roleGroups MUST be pre-sorted
-     * in C1-Group-Type-C2 order for this routine. Pre-sorting is used to
-     * provide overall computational efficiency.</font>
+     * Equals.
      *
      * @param roleGroupB the role group b
-     * @return true iff RoleValues match
+     * @return true, if successful
      */
     public boolean equals(RelationshipGroup roleGroupB) {
         int sizeA = this.size();
@@ -161,14 +151,10 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     }
 
     /**
-     * Find logically equivalent role group from role group list provided. <br>
-     * <br>
-     * <font color=#990099> IMPLEMENTATION NOTE: roleGroups MUST be pre-sorted
-     * in C1-Group-Type-C2 order for this routine. Pre-sorting is used to
-     * provide overall computational efficiency.</font>
+     * Find logical equivalent.
      *
      * @param groupList_B the group list_ b
-     * @return RelationshipGroup iff logically equivalent role group found
+     * @return the relationship group
      */
     public RelationshipGroup findLogicalEquivalent(RelationshipGroupList groupList_B) {
         for (RelationshipGroup relationshipGroup : groupList_B) {
@@ -179,6 +165,12 @@ public class RelationshipGroup extends ArrayList<Relationship> {
         return null;
     }
     
+    /**
+     * Gets the distance to group in same concept.
+     *
+     * @param relationshipGroup the relationship group
+     * @return the distance to group in same concept
+     */
     public int getDistanceToGroupInSameConcept(RelationshipGroup relationshipGroup){
     	int ret=0;
     	if (this.equals(relationshipGroup)) {
@@ -187,16 +179,13 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     	int sizeA = this.size();
     	int sizeB = relationshipGroup.size();
     	List<Integer> indexMatches=new ArrayList<Integer>();
-    	boolean match;
     	int val;
     	for (int i=0;i<sizeA;i++){
-    		match=false;
     		for (Integer j=0;j<sizeB;j++){
     			
     			if (!indexMatches.contains(j)){
 	    			val=this.get(i).compareSameConceptWOGroupTo(relationshipGroup.get(j));
 	    			if (val==0){
-	    				match=true;
 	    				indexMatches.add(j);
 	    				break;
 	    			}
@@ -218,5 +207,5 @@ public class RelationshipGroup extends ArrayList<Relationship> {
     	return ret;
     }
 
-} // class RelationshipGroup
+} 
 

@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.utils;
 
 import java.io.File;
@@ -9,11 +17,28 @@ import java.util.Comparator;
 
 import org.apache.log4j.Logger;
 
+
+/**
+ * The Class FileHelper.
+ *
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class FileHelper {
 	
+	/** The Constant log. */
 	private static final Logger log = Logger.getLogger(FileHelper.class);
 	
 	
+	/**
+	 * Count lines.
+	 *
+	 * @param file the file
+	 * @param firstLineHeader the first line header
+	 * @return the int
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static int countLines(File file, boolean firstLineHeader) throws IOException {
 
 		FileInputStream fis = new FileInputStream(file);
@@ -35,6 +60,11 @@ public class FileHelper {
 		}
 	}
 
+	/**
+	 * Empty folder.
+	 *
+	 * @param folder the folder
+	 */
 	public static void emptyFolder(File folder){
 		if(folder.isDirectory()){
 			File[] files = folder.listFiles();

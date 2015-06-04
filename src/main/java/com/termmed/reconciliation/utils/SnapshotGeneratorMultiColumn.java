@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.utils;
 
 import java.io.BufferedReader;
@@ -10,16 +18,47 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+
+/**
+ * The class SnapshotGeneratorMultiColumn.
+ *
+ * @author Alejandro Rodriguez.
+ * @version 1.0
+ */
 public class SnapshotGeneratorMultiColumn extends AbstractTask {
 
+	/** The sorted file. */
 	private File sortedFile;
+	
+	/** The column filter ixs. */
 	private Integer[] columnFilterIxs;
+	
+	/** The column filter values. */
 	private String[] columnFilterValues;
+	
+	/** The date. */
 	private String date;
+	
+	/** The effective time column. */
 	private int effectiveTimeColumn;
+	
+	/** The output file. */
 	private File outputFile;
+	
+	/** The component columns id. */
 	private int[] componentColumnsId;
 
+	/**
+	 * Instantiates a new snapshot generator multi column.
+	 *
+	 * @param sortedFile the sorted file
+	 * @param date the date
+	 * @param componentColumnsId the component columns id
+	 * @param effectiveTimeColumn the effective time column
+	 * @param outputFile the output file
+	 * @param columnFilterIxs the column filter ixs
+	 * @param columnFilterValues the column filter values
+	 */
 	public SnapshotGeneratorMultiColumn(File sortedFile, String date,
 			int[] componentColumnsId, int effectiveTimeColumn, File outputFile,
 			Integer[] columnFilterIxs,String[] columnFilterValues) {
@@ -33,6 +72,9 @@ public class SnapshotGeneratorMultiColumn extends AbstractTask {
 		this.columnFilterValues=columnFilterValues;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.termmed.reconciliation.utils.AbstractTask#execute()
+	 */
 	public void execute(){
 		
 		try {

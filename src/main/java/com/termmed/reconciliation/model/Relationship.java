@@ -1,33 +1,22 @@
 /**
- * Copyright (c) 2009 International Health Terminology Standards Development
- * Organisation
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
  */
+
 package com.termmed.reconciliation.model;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-import com.termmed.reconciliation.utils.I_Constants;
 
 /**
  * The Class Relationship.
- * Represents a relationship.
+ * 
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
  */
 public class Relationship implements Comparable<Object> {
 
@@ -46,14 +35,31 @@ public class Relationship implements Comparable<Object> {
 	/** The group. */
 	public int group;
 
+	/** The eff time. */
 	public int effTime;
 
+	/** The module. */
 	public long module;
 
+	/** The char type. */
 	public long charType;
 
+	/** The active. */
 	public short active;
 
+	/**
+	 * Instantiates a new relationship.
+	 *
+	 * @param sourceId the source id
+	 * @param destinationId the destination id
+	 * @param roleTypeId the role type id
+	 * @param group the group
+	 * @param relationshipId the relationship id
+	 * @param effTime the eff time
+	 * @param module the module
+	 * @param active the active
+	 * @param charType the char type
+	 */
 	public Relationship(long sourceId, long destinationId, long roleTypeId, int group, String relationshipId,int effTime,long module,short active,long charType) {
 		this.sourceId = sourceId;
 		this.destinationId = destinationId;
@@ -78,7 +84,6 @@ public class Relationship implements Comparable<Object> {
 	}
 
 
-	// default sort order [c1-group-type-c2]
 	/* (non-Javadoc)
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
@@ -111,8 +116,14 @@ public class Relationship implements Comparable<Object> {
 				}
 			}
 		}
-	} // Relationship.compareTo()
+	} 
 	
+	/**
+	 * Compare wo group to.
+	 *
+	 * @param o the o
+	 * @return the int
+	 */
 	public int compareWOGroupTo(Object o) {
 		Relationship other = (Relationship) o;
 		int thisMore = 1;
@@ -137,6 +148,13 @@ public class Relationship implements Comparable<Object> {
 			}
 		}
 	} 
+	
+	/**
+	 * Compare same concept wo group to.
+	 *
+	 * @param o the o
+	 * @return the int
+	 */
 	public int compareSameConceptWOGroupTo(Object o) {
 		Relationship other = (Relationship) o;
 		int thisMore = 1;
@@ -155,10 +173,10 @@ public class Relationship implements Comparable<Object> {
 			}
 		}
 	} 
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
-	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(sourceId);
@@ -169,6 +187,6 @@ public class Relationship implements Comparable<Object> {
 		return sb.toString();
 	}
 
-} // class Relationship
+} 
 
 

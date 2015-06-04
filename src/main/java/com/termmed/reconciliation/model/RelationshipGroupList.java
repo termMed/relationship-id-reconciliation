@@ -1,18 +1,10 @@
 /**
- * Copyright (c) 2009 International Health Terminology Standards Development
- * Organisation
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
  */
 package com.termmed.reconciliation.model;
 
@@ -22,9 +14,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+
 /**
  * The Class RelationshipGroupList.
- * Represents a relationship group list
+ * 
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
  */
 public class RelationshipGroupList extends ArrayList<RelationshipGroup> {
     
@@ -32,18 +28,14 @@ public class RelationshipGroupList extends ArrayList<RelationshipGroup> {
     private static final long serialVersionUID = 1L;
 
     /**
-     * Instantiates a new sno grp list.
+     * Instantiates a new relationship group list.
      */
     public RelationshipGroupList() {
         super();
     }
 
     /**
-     * Construct a ROLE_GROUP_LIST from <code>List&lt;Relationship&gt;</code><br>
-     * <br>
-     * <font color=#990099> IMPLEMENTATION NOTE: roleGroups MUST be pre-sorted
-     * in C1-Group-Type-C2 order for this routine. Pre-sorting is used to
-     * provide overall computational efficiency.</font>
+     * Instantiates a new relationship group list.
      *
      * @param rels the rels
      */
@@ -85,14 +77,10 @@ public class RelationshipGroupList extends ArrayList<RelationshipGroup> {
 
    
     /**
-     * Which groups in this do not have ANY equal group in groupListB?<br>
-     * <br>
-     * <font color=#990099> IMPLEMENTATION NOTE: roleGroups MUST be pre-sorted
-     * in C1-Group-Type-C2 order for this routine. Pre-sorting is used to
-     * provide overall computational efficiency.</font>
+     * Which not equal.
      *
      * @param groupListB the group list b
-     * @return <code>RelationshipGroupList</code>
+     * @return the relationship group list
      */
     public RelationshipGroupList whichNotEqual(RelationshipGroupList groupListB) {
         RelationshipGroupList sg = new RelationshipGroupList();
@@ -111,6 +99,12 @@ public class RelationshipGroupList extends ArrayList<RelationshipGroup> {
         return sg;
     }
 
+    /**
+     * Gets the equal relationship in group.
+     *
+     * @param groupListB the group list b
+     * @return the equal relationship in group
+     */
     public Map<Relationship,Relationship> getEqualRelationshipInGroup(RelationshipGroupList groupListB) {
         Map	<Relationship,Relationship> relsMap=new HashMap<Relationship,Relationship>();
         for (RelationshipGroup groupA : this) {

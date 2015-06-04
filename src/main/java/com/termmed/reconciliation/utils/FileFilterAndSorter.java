@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.utils;
 
 import java.io.BufferedReader;
@@ -16,16 +24,40 @@ import java.util.Iterator;
 import java.util.List;
 
 
+
+/**
+ * The Class FileFilterAndSorter.
+ *
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class FileFilterAndSorter extends AbstractTask {
 
+	/** The input file. */
 	private File inputFile;
+	
+	/** The output file. */
 	private File outputFile;
+	
+	/** The temp folder. */
 	private File tempFolder;
+	
+	/** The sort columns. */
 	private int[] sortColumns;
+	
+	/** The split size. */
 	private final Integer SPLIT_SIZE = 150000;
+	
+	/** The column filter ixs. */
 	private Integer[] columnFilterIxs;
+	
+	/** The column filter values. */
 	private String[] columnFilterValues;
 
+	/* (non-Javadoc)
+	 * @see com.termmed.reconciliation.utils.AbstractTask#execute()
+	 */
 	public void execute() {
 		try {
 			FileHelper.emptyFolder(tempFolder);
@@ -85,6 +117,16 @@ public class FileFilterAndSorter extends AbstractTask {
 	}
 
 
+	/**
+	 * Instantiates a new file filter and sorter.
+	 *
+	 * @param inputFile the input file
+	 * @param outputFile the output file
+	 * @param tempFolder the temp folder
+	 * @param sortColumns the sort columns
+	 * @param columnFilterIxs the column filter ixs
+	 * @param columnFilterValues the column filter values
+	 */
 	public FileFilterAndSorter(File inputFile, File outputFile, File tempFolder,
 			int[] sortColumns,Integer[] columnFilterIxs,String[] columnFilterValues) {
 		super();
@@ -97,6 +139,13 @@ public class FileFilterAndSorter extends AbstractTask {
 	}
 
 
+	/**
+	 * Write file.
+	 *
+	 * @param datos the datos
+	 * @param osw the osw
+	 * @param orderColumns the order columns
+	 */
 	public void writeFile(List<String[]> datos, OutputStreamWriter osw, int[] orderColumns) {
 		try {
 			BufferedWriter bw = new BufferedWriter(osw);
@@ -121,6 +170,14 @@ public class FileFilterAndSorter extends AbstractTask {
 		}
 
 	}
+	
+	/**
+	 * Sort file.
+	 *
+	 * @param outputFile the output file
+	 * @param tempFolder the temp folder
+	 * @param header the header
+	 */
 	public void sortFile( File outputFile, File tempFolder, String header) {
 		try {
 

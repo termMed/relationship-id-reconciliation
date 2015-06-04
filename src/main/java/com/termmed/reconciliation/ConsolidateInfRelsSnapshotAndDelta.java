@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation;
 
 import java.io.BufferedReader;
@@ -12,22 +20,62 @@ import java.io.OutputStreamWriter;
 
 import com.termmed.reconciliation.ChangeConsolidator.FILE_TYPE;
 
+
+/**
+ * The Class ConsolidateInfRelsSnapshotAndDelta.
+ *
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class ConsolidateInfRelsSnapshotAndDelta  {
 
+	/** The snapshot sorted previousfile. */
 	private File snapshotSortedPreviousfile;
+	
+	/** The snapshot sorted exportedfile. */
 	private File snapshotSortedExportedfile;
+	
+	/** The snapshot final file. */
 	private File snapshotFinalFile;
+	
+	/** The fields to compare. */
 	private Integer[] fieldsToCompare;
 //	private int index;
-	private String releaseDate;
+	/** The release date. */
+private String releaseDate;
+	
+	/** The new line. */
 	private String newLine="\r\n";
+	
+	/** The col len. */
 	private int colLen;
+	
+	/** The delta final file. */
 	private File deltaFinalFile;
+	
+	/** The bw. */
 	private BufferedWriter bw;
+	
+	/** The dbw. */
 	private BufferedWriter dbw;
+	
+	/** The effective time col index. */
 	private int effectiveTimeColIndex;
+	
+	/** The indexes. */
 	private int[] indexes;
 
+	/**
+	 * Instantiates a new consolidate inf rels snapshot and delta.
+	 *
+	 * @param fType the f type
+	 * @param snapshotSortedPreviousfile the snapshot sorted previousfile
+	 * @param snapshotSortedExportedfile the snapshot sorted exportedfile
+	 * @param snapshotFinalFile the snapshot final file
+	 * @param deltaFinalFile the delta final file
+	 * @param releaseDate the release date
+	 */
 	public ConsolidateInfRelsSnapshotAndDelta(FILE_TYPE fType,
 			File snapshotSortedPreviousfile, File snapshotSortedExportedfile,
 			File snapshotFinalFile, File deltaFinalFile, String releaseDate) {
@@ -41,6 +89,11 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 		this.releaseDate=releaseDate;
 	}
 
+	/**
+	 * Execute.
+	 *
+	 * @throws Exception the exception
+	 */
 	public void execute() throws Exception {
 
 		try {
@@ -153,6 +206,12 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 
 	}
 
+	/**
+	 * Adds the exported line.
+	 *
+	 * @param splittedLine the splitted line
+	 * @throws Exception the exception
+	 */
 	private void addExportedLine( String[] splittedLine) throws Exception {
 		StringBuffer sb=new StringBuffer();
 		for (int i = 0; i < colLen; i++) {
@@ -173,6 +232,13 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 		dbw.append(tmp);
 	}
 
+	/**
+	 * Idx compare.
+	 *
+	 * @param splittedLine1 the splitted line1
+	 * @param splittedLine2 the splitted line2
+	 * @return the int
+	 */
 	private int idxCompare(String[] splittedLine1, String[] splittedLine2) {
 		int iComp;
 		for (int i : indexes){
@@ -182,6 +248,13 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 		}
 		return 0;
 	}
+	
+	/**
+	 * Adds the previous line.
+	 *
+	 * @param splittedLine the splitted line
+	 * @throws Exception the exception
+	 */
 	private void addPreviousLine(String[] splittedLine) throws Exception {
 		for (int i = 0; i < splittedLine.length; i++) {
 			bw.append(splittedLine[i]);
@@ -192,6 +265,13 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 		bw.append(newLine);
 	}
 
+	/**
+	 * Adds the previous line.
+	 *
+	 * @param splittedLine the splitted line
+	 * @param status the status
+	 * @throws Exception the exception
+	 */
 	private void addPreviousLine(String[] splittedLine,String status) throws Exception {
 
 		if (splittedLine[2].compareTo(status)!=0){
@@ -221,6 +301,13 @@ public class ConsolidateInfRelsSnapshotAndDelta  {
 
 	}
 
+	/**
+	 * Fields compare.
+	 *
+	 * @param splittedLine1 the splitted line1
+	 * @param splittedLine2 the splitted line2
+	 * @return the int
+	 */
 	private int fieldsCompare(String[] splittedLine1, String[] splittedLine2) {
 		int iComp;
 		for (int i : fieldsToCompare){

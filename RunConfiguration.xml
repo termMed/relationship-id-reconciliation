@@ -9,9 +9,9 @@
 	</previous_inferred_relationship_snapshot_files>
 	<!-- relationship output file -->
 	<relationships_output_file>/Users/ar/Downloads/testGroupRecon/sct2_Inferred_Reconciled.txt</relationships_output_file>
-	<end_point_url>http://mgr.servers.aceworkspace.net:50042/axis2/services/id_generator</end_point_url>
-	<pass>termmed</pass>
-	<user>snomed11</user>
+	<end_point_url>[ADD ID GENERATOR SERVICE URL]</end_point_url>
+	<pass>[ADD ID GENERATOR SERVICE PASSWORD]</pass>
+	<user>[ADD ID GENERATOR SERVICE USERNAME]</user>
 	<release_date>20150731</release_date>
 	<namespace>0</namespace>
 	<partition>02</partition>

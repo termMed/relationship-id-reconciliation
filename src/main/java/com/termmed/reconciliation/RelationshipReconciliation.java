@@ -1,18 +1,10 @@
 /**
- * Copyright (c) 2009 International Health Terminology Standards Development
- * Organisation
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
  */
 package com.termmed.reconciliation;
 
@@ -51,6 +43,11 @@ import com.termmed.reconciliation.utils.I_Constants;
  */
 public class RelationshipReconciliation {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 
 		logger = Logger.getLogger("com.termmed.reconciliation.RelationshipReconciliation");
@@ -73,15 +70,19 @@ public class RelationshipReconciliation {
 	}
 	/** The prev inferred rels. */
 	private String[] previousInferredRelationshipsFile;
+	
+	/** The temp relationship store. */
 	private File tempRelationshipStore;
 
+	/** The config. */
 	private File config;
+	
+	/** The output relationships. */
 	private String outputRelationships;
 
 	/**
 	 * Instantiates a new classification runner.
 	 *
-	 * @param module the module
 	 * @param previousInferredRelationships the prev inferred rels
 	 * @param currentInferredRelationships the output rels
 	 * @param outputRelationships the output relationship file
@@ -99,6 +100,12 @@ public class RelationshipReconciliation {
 		this.outputRelationships=outputRelationships;
 	}
 
+	/**
+	 * Instantiates a new relationship reconciliation.
+	 *
+	 * @param config the config
+	 * @throws ConfigurationException the configuration exception
+	 */
 	public RelationshipReconciliation(File config) throws ConfigurationException {
 		this.config=config;
 
@@ -120,24 +127,43 @@ public class RelationshipReconciliation {
 	/** The isa. */
 	private  long isa;
 
+	/** The current relationships file. */
 	private  String[] currentRelationshipsFile;
 
+	/** The xml config. */
 	private XMLConfiguration xmlConfig;
 
+	/** The new no rec. */
 	private HashMap<Long,ArrayList<Relationship>> newNoRec;
 
+	/** The prev act now ret. */
 	private HashMap<Long,ArrayList<Relationship>> prevActNowRet;
 
+	/** The prev inact. */
 	private HashMap<Long,TreeMap<String,Relationship>> prevInact;
 
+	/** The bw. */
 	private BufferedWriter bw;
 
+	/** The tmp new no rec. */
 	private HashMap<Long, ArrayList<Relationship>> tmpNewNoRec;
+	
+	/** The sum b_ total. */
 	private int sumB_Total;
+	
+	/** The sum same isa. */
 	private int sumSameISA;
+	
+	/** The sum a_ diff. */
 	private int sumA_Diff;
+	
+	/** The sum a_ diff isa. */
 	private int sumA_DiffISA;
+	
+	/** The sum b_ diff. */
 	private int sumB_Diff;
+	
+	/** The sum b_ diff isa. */
 	private int sumB_DiffISA;
 
 
@@ -256,6 +282,13 @@ public class RelationshipReconciliation {
 		}
 	}
 
+	/**
+	 * Group reassignment.
+	 *
+	 * @param snorelA the snorel a
+	 * @param snorelB the snorel b
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private void groupReassignment(
 			ArrayList<Relationship> snorelA,
 			ArrayList<Relationship> snorelB) 
@@ -477,6 +510,13 @@ public class RelationshipReconciliation {
 		logger.info(s.toString());
 	}
 
+	/**
+	 * Gets the best group number.
+	 *
+	 * @param distances the distances
+	 * @param usageGroups the usage groups
+	 * @return the best group number
+	 */
 	private Integer getBestGroupNumber(List<Integer[]> distances,
 			List<Integer> usageGroups) {
 		Integer bestGr=null;
@@ -493,6 +533,12 @@ public class RelationshipReconciliation {
 		return bestGr;
 	}
 
+	/**
+	 * Next role group number.
+	 *
+	 * @param map the map
+	 * @return the integer
+	 */
 	private Integer nextRoleGroupNumber(HashMap<Integer,Integer> map) {
 
 		Integer testNum = 1;
@@ -513,6 +559,14 @@ public class RelationshipReconciliation {
 
 		return testNum;
 	}
+	
+	/**
+	 * Compare prev inact.
+	 *
+	 * @param step the step
+	 * @return the string
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private String comparePrevInact(int step) throws IOException {
 		// STATISTICS COUNTERS
 		int countSameISA = 0;
@@ -599,6 +653,13 @@ public class RelationshipReconciliation {
 		return s.toString();
 	}
 
+	/**
+	 * Compare actives wo match.
+	 *
+	 * @param step the step
+	 * @return the string
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private String compareActivesWOMatch(  int step) throws IOException {
 		// STATISTICS COUNTERS
 		int countSameISA = 0;
@@ -684,6 +745,14 @@ public class RelationshipReconciliation {
 		return s.toString();
 	}
 
+	/**
+	 * Compare rels step.
+	 *
+	 * @param inR the in r
+	 * @param outR the out r
+	 * @param step the step
+	 * @return true, if successful
+	 */
 	private boolean compareRelsStep(Relationship inR, Relationship outR,int step) {
 
 		switch (step){
@@ -733,6 +802,14 @@ public class RelationshipReconciliation {
 	}
 
 
+	/**
+	 * Load active inferred relationship.
+	 *
+	 * @param relationshipFiles the relationship files
+	 * @param rels the rels
+	 * @param i the i
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public  void loadActiveInferredRelationship( String[] relationshipFiles,ArrayList<Relationship> rels, int i)throws IOException {
 
 		String line;
@@ -779,6 +856,12 @@ public class RelationshipReconciliation {
 		}
 	}
 
+	/**
+	 * Load not active inferred relationship.
+	 *
+	 * @param relationshipFiles the relationship files
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public  void loadNotActiveInferredRelationship( String[] relationshipFiles)throws IOException {
 
 		String line;
@@ -830,6 +913,11 @@ public class RelationshipReconciliation {
 		}
 	}
 
+	/**
+	 * Write no reconciled rel.
+	 *
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private  void writeNoReconciledRel( )
 			throws IOException {
 
@@ -844,6 +932,14 @@ public class RelationshipReconciliation {
 
 	}
 
+	/**
+	 * Write reconciled.
+	 *
+	 * @param bw the bw
+	 * @param infRel the inf rel
+	 * @param prevRel the prev rel
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private  void writeReconciled(BufferedWriter bw,Relationship infRel, Relationship prevRel)
 			throws  IOException {
 
@@ -852,6 +948,7 @@ public class RelationshipReconciliation {
 				I_Constants.INFERRED, I_Constants.SOMEMODIFIER);
 
 	}
+	
 	/**
 	 * Write r f2 type line.
 	 *
@@ -866,7 +963,7 @@ public class RelationshipReconciliation {
 	 * @param relTypeId the rel type id
 	 * @param characteristicTypeId the characteristic type id
 	 * @param modifierId the modifier id
-	 * @throws java.io.IOException Signals that an I/O exception has occurred.
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 
 	public static void writeRF2TypeLine(BufferedWriter bw, String relationshipId, int effectiveTime, int active, long moduleId, long sourceId, long destinationId, int relationshipGroup, long relTypeId,
@@ -882,7 +979,7 @@ public class RelationshipReconciliation {
 	 * @param snorelA the snorel a
 	 * @param snorelB the snorel b
 	 * @return the string
-	 * @throws java.io.IOException Signals that an I/O exception has occurred.
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private  String compareActivesAndWriteBack(List<Relationship> snorelA, List<Relationship> snorelB)
 			throws  IOException {
@@ -1192,6 +1289,11 @@ public class RelationshipReconciliation {
 		return s.toString();
 	}
 
+	/**
+	 * Write prev act now ret.
+	 *
+	 * @param rel_A the rel_ a
+	 */
 	private void writePrevActNowRet(Relationship rel_A) {
 		ArrayList<Relationship> rels;
 		if (prevActNowRet.containsKey(rel_A.sourceId)){
@@ -1203,6 +1305,11 @@ public class RelationshipReconciliation {
 		prevActNowRet.put(rel_A.sourceId,rels);
 	}
 
+	/**
+	 * Write new no rec.
+	 *
+	 * @param rel_B the rel_ b
+	 */
 	private void writeNewNoRec( Relationship rel_B) {
 		ArrayList<Relationship> rels;
 		if (tmpNewNoRec.containsKey(rel_B.sourceId)){
@@ -1242,6 +1349,12 @@ public class RelationshipReconciliation {
 		}
 	} // compareSnoRel
 
+	/**
+	 * Gets the params.
+	 *
+	 * @return the params
+	 * @throws ConfigurationException the configuration exception
+	 */
 	@SuppressWarnings("unchecked")
 	private void getParams() throws ConfigurationException  {
 

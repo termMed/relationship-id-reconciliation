@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.utils;
 
 import java.io.BufferedReader;
@@ -17,10 +25,32 @@ import java.util.HashSet;
 import java.util.List;
 
 
+
+/**
+ * The Class CommonUtils.
+ *
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class CommonUtils {
+	
+	/** The new line. */
 	private static String newLine="\r\n";
+	
+	/** The Hash names. */
 	private static HashMap<String, String> HashNames;
+	
+	/** The rf2 description. */
 	private static File rf2Description;
+	
+	/**
+	 * Gets the smallest array.
+	 *
+	 * @param passedMap the passed map
+	 * @param sortColumns the sort columns
+	 * @return the smallest array
+	 */
 	public static String[] getSmallestArray(HashMap<BufferedReader, String[]> passedMap, int[] sortColumns) {
 
 		List<String[]> mapValues = new ArrayList<String[]>(passedMap.values());
@@ -93,6 +123,13 @@ public class CommonUtils {
 
 		}
 	}
+	
+	/**
+	 * Gets the refset ids.
+	 *
+	 * @param file the file
+	 * @return the refset ids
+	 */
 	public static String[] getRefsetIds(File file) {
 		String[] result = new String[]{};
 		HashSet<String> hashRefset = new HashSet<String>();
@@ -119,17 +156,21 @@ public class CommonUtils {
 			System.gc();
 			result = hashRefset.toArray(new String[] {});
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return result;
 	}
+	
+	/**
+	 * Merge file.
+	 *
+	 * @param hFile the h file
+	 * @param outputfile the outputfile
+	 */
 	public static void MergeFile(HashSet<File> hFile, File outputfile) {
 
 		try{
@@ -199,6 +240,14 @@ public class CommonUtils {
 		}
 	}
 
+	/**
+	 * Filter file.
+	 *
+	 * @param file the file
+	 * @param outputFile the output file
+	 * @param filterColumnIndex the filter column index
+	 * @param valueAnalyzer the value analyzer
+	 */
 	public static void FilterFile(File file,File outputFile, int filterColumnIndex,ValueAnalyzer valueAnalyzer) {
 
 		try{
@@ -241,6 +290,15 @@ public class CommonUtils {
 
 		}
 	}
+	
+	/**
+	 * Gets the names.
+	 *
+	 * @param descriptionFile the description file
+	 * @param date the date
+	 * @return the names
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static HashMap<String, String> getNames(File descriptionFile,String date) throws IOException {
 		if (HashNames!=null && rf2Description!=null && rf2Description.getAbsolutePath()==descriptionFile.getAbsolutePath()){
 				return HashNames;

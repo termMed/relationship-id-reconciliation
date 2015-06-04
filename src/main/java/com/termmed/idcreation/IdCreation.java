@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.idcreation;
 
 import java.io.BufferedReader;
@@ -20,17 +28,51 @@ import org.apache.log4j.Logger;
 import com.termmed.reconciliation.utils.GenIdHelper;
 import com.termmed.reconciliation.utils.I_Constants;
 
+
+/**
+ * The Class IdCreation.
+ * 
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class IdCreation {
+	
+	/** The component file. */
 	String componentFile;
+	
+	/** The namespace id. */
 	int namespaceId;
+	
+	/** The partition id. */
 	long partitionId;
+	
+	/** The end point url. */
 	String endPointURL;
+	
+	/** The username. */
 	String username;
+	
+	/** The pass. */
 	String pass;
+	
+	/** The release date. */
 	private String releaseDate;
+	
+	/** The xml config. */
 	private XMLConfiguration xmlConfig;
+	
+	/** The config. */
 	private File config;
+	
+	/** The Constant log. */
 	private static final Logger log = Logger.getLogger(IdCreation.class);
+	
+	/**
+	 * Execute.
+	 *
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public void execute() throws IOException{
 
 		IdAssignmentBI idAssignment = new IdAssignmentImpl(endPointURL,username,pass);
@@ -152,6 +194,17 @@ public class IdCreation {
 	}
 
 
+	/**
+	 * Instantiates a new id creation.
+	 *
+	 * @param componentFile the component file
+	 * @param namespaceId the namespace id
+	 * @param partitionId the partition id
+	 * @param endPointURL the end point url
+	 * @param username the username
+	 * @param pass the pass
+	 * @param releaseDate the release date
+	 */
 	public IdCreation(String componentFile, int namespaceId,
 			long partitionId, String endPointURL, String username, String pass,
 			String releaseDate) {
@@ -166,6 +219,12 @@ public class IdCreation {
 	}
 
 
+	/**
+	 * Instantiates a new id creation.
+	 *
+	 * @param config the config
+	 * @throws ConfigurationException the configuration exception
+	 */
 	public IdCreation(File config) throws ConfigurationException {
 
 		this.config=config;
@@ -174,6 +233,12 @@ public class IdCreation {
 	}
 
 
+	/**
+	 * Gets the params.
+	 *
+	 * @return the params
+	 * @throws ConfigurationException the configuration exception
+	 */
 	private void getParams() throws ConfigurationException  {
 
 		try {
@@ -205,6 +270,13 @@ public class IdCreation {
 		log.info("Release date : " + releaseDate );
 		
 	}
+	
+	/**
+	 * Gets the cont base.
+	 *
+	 * @return the cont base
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private Long getContBase() throws IOException {
 		Long contBase=null;
 		FileInputStream rfis = new FileInputStream(componentFile);
@@ -226,6 +298,13 @@ public class IdCreation {
 		rbr=null;
 		return contBase;
 	}
+	
+	/**
+	 * Gets the id.
+	 *
+	 * @param contBase the cont base
+	 * @return the id
+	 */
 	private Long getId(long contBase){
 		long num=contBase;
 		long multip = 100;

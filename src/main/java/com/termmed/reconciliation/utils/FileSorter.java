@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
+ */
 package com.termmed.reconciliation.utils;
 
 import java.io.BufferedReader;
@@ -16,15 +24,33 @@ import java.util.Iterator;
 import java.util.List;
 
 
-
+/**
+ * The Class FileSorter.
+ *
+ * @author Alejandro Rodriguez.
+ *
+ * @version 1.0
+ */
 public class FileSorter extends AbstractTask {
 
+	/** The input file. */
 	private File inputFile;
+	
+	/** The output file. */
 	private File outputFile;
+	
+	/** The temp folder. */
 	private File tempFolder;
+	
+	/** The sort columns. */
 	private int[] sortColumns;
+	
+	/** The split size. */
 	private final Integer SPLIT_SIZE = 150000;
 
+	/* (non-Javadoc)
+	 * @see com.termmed.reconciliation.utils.AbstractTask#execute()
+	 */
 	public void execute() {
 		try {
 			FileHelper.emptyFolder(tempFolder);
@@ -69,6 +95,14 @@ public class FileSorter extends AbstractTask {
 	}
 
 
+	/**
+	 * Instantiates a new file sorter.
+	 *
+	 * @param inputFile the input file
+	 * @param outputFile the output file
+	 * @param tempFolder the temp folder
+	 * @param sortColumns the sort columns
+	 */
 	public FileSorter(File inputFile, File outputFile, File tempFolder,
 			int[] sortColumns) {
 		super();
@@ -79,6 +113,13 @@ public class FileSorter extends AbstractTask {
 	}
 
 
+	/**
+	 * Write file.
+	 *
+	 * @param datos the datos
+	 * @param osw the osw
+	 * @param orderColumns the order columns
+	 */
 	public void writeFile(List<String[]> datos, OutputStreamWriter osw, int[] orderColumns) {
 		try {
 			BufferedWriter bw = new BufferedWriter(osw);
@@ -103,6 +144,14 @@ public class FileSorter extends AbstractTask {
 		}
 
 	}
+	
+	/**
+	 * Sort file.
+	 *
+	 * @param outputFile the output file
+	 * @param tempFolder the temp folder
+	 * @param header the header
+	 */
 	public void sortFile( File outputFile, File tempFolder, String header) {
 		try {
 

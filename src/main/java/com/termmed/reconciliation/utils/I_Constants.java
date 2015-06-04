@@ -1,26 +1,19 @@
 /**
- * Copyright (c) 2009 International Health Terminology Standards Development
- * Organisation
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (c) 2015 TermMed SA
+ * Organization
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/
  */
+
 package com.termmed.reconciliation.utils;
 
+
 /**
- * Title: I_Constants Description: Declared all the constants used by routines Copyright: Copyright (c) 2010 Company: IHTSDO
- * 
- * @author Alejandro Rodriguez.
+ * The class I_Constants.
  *
+ * @author Alejandro Rodriguez.
  * @version 1.0
  */
 
@@ -449,34 +442,55 @@ public class I_Constants {
 	/** The Constant IDENTIFIER_SCHEME_ID. */
 	public static final String IDENTIFIER_SCHEME_ID = "900000000000002006";
 
+	/** The Constant RUN_CONFIGURATION_FILE. */
 	public static final String RUN_CONFIGURATION_FILE = "runconfiguration.xml";
 	
+	/** The Constant CONCEPT_SNAPSHOT_FILES. */
 	public static final String CONCEPT_SNAPSHOT_FILES = "concept_snapshot_files.file";
 
+	/** The Constant CURRENT_INFERRED_RELATIONSHIP_FILES. */
 	public static final String CURRENT_INFERRED_RELATIONSHIP_FILES = "current_inferred_relationship_snapshot_files.file";
 
+	/** The Constant EQUIVALENT_CONCEPTS_OUTPUT_FILE. */
 	public static final String EQUIVALENT_CONCEPTS_OUTPUT_FILE = "equivalent_concept_output_file";
 
+	/** The Constant DETECTED_CYCLE_OUTPUT_FILE. */
 	public static final String DETECTED_CYCLE_OUTPUT_FILE = "detected_cycles_output_file";
 
+	/** The Constant MODULEID. */
 	public static final String MODULEID = "moduleId";
 
+	/** The Constant RELEASEDATE. */
 	public static final String RELEASEDATE = "release_date";
 
+	/** The Constant PREVIOUS_INFERRED_RELATIONSHIP_FILES. */
 	public static final String PREVIOUS_INFERRED_RELATIONSHIP_FILES = "previous_inferred_relationship_snapshot_files.file";
 
+	/** The Constant RELATIONSHIP_FILE. */
 	public static final String RELATIONSHIP_FILE =  "relationships_output_file";
 
+	/** The Constant NAMESPACE. */
 	public static final String NAMESPACE = "namespace";
+	
+	/** The Constant PARTITION. */
 	public static final String PARTITION = "partition";
 
+	/** The Constant ENDPOINTURL. */
 	public static final String ENDPOINTURL = "end_point_url";
+	
+	/** The Constant USERNAME. */
 	public static final String USERNAME = "user";
+	
+	/** The Constant PASSWORD. */
 	public static final String PASSWORD = "pass";
 
+	/** The Constant CONSOLIDATED_SNAPSHOT_FILE. */
 	public static final String CONSOLIDATED_SNAPSHOT_FILE = "consolidated_snapshot_file";
+	
+	/** The Constant CONSOLIDATED_DELTA_FILE. */
 	public static final String CONSOLIDATED_DELTA_FILE = "consolidated_delta_file";
 
+	/** The Constant ADDITIONAL_RELS_SNAPSHOT_FILE. */
 	public static final String ADDITIONAL_RELS_SNAPSHOT_FILE = "additional_rels_snapshot_file";
 	
 }
