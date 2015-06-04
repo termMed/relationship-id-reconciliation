@@ -86,7 +86,7 @@ In this fourth stage the process creates Delta and Snapshot files based on the I
 ## Testing / Demonstration
 The project includes junit tests that run the algorithm from specific test resources, sets of relationships prepared to demonstrate the effect.
 
-Example output for groups reconciliation phase:
+Example output for groupId reconciliation example dataset:
 ```
 [jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1266) - Reconciliation - Parameters:
 [jun 04 17:50:27] INFO  (RelationshipReconciliation.java:1267) - Current Relationship files : 
@@ -123,7 +123,7 @@ Example output for groups reconciliation phase:
 ::: *** WROTE *** LAPSED TIME =	0.02 (seconds)	 ***
 ```
 
-Example output for individual relationships phase:
+Example output for relationshipIds reconciliation example dataset:
 ```
 [jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1266) - Reconciliation - Parameters:
 [jun 04 17:51:28] INFO  (RelationshipReconciliation.java:1267) - Current Relationship files : 
