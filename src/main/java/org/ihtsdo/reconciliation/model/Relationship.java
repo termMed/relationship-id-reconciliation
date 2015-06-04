@@ -137,6 +137,24 @@ public class Relationship implements Comparable<Object> {
 			}
 		}
 	} 
+	public int compareSameConceptWOGroupTo(Object o) {
+		Relationship other = (Relationship) o;
+		int thisMore = 1;
+		int thisLess = -1;
+		if (this.typeId > other.typeId) {
+			return thisMore;
+		} else if (this.typeId < other.typeId) {
+			return thisLess;
+		} else {
+			if (this.destinationId > other.destinationId) {
+				return thisMore;
+			} else if (this.destinationId < other.destinationId) {
+				return thisLess;
+			} else {
+				return 0; // this == received
+			}
+		}
+	} 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */

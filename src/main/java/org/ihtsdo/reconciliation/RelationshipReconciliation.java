@@ -54,6 +54,7 @@ public class RelationshipReconciliation {
 
 		logger = Logger.getLogger("org.ihtsdo.reconciliation.RelationshipReconciliation");
 		try {
+			
 			File file =new File(I_Constants.RUN_CONFIGURATION_FILE);
 			if (!file.exists()){
 				logger.info("Error happened getting params. Params file doesn't exist");
@@ -181,13 +182,15 @@ public class RelationshipReconciliation {
 
 			loadActiveInferredRelationship(previousInferredRelationshipsFile,previousRelationships,1);
 
+			groupReassignment(previousRelationships, currentRelationships);
+
 			logger.info(compareActivesAndWriteBack(previousRelationships, currentRelationships));
 
 			previousRelationships=null;
 			currentRelationships=null;
 			newNoRec=tmpNewNoRec;
 			tmpNewNoRec=new HashMap<Long, ArrayList<Relationship>>();
-			
+
 			for (int i=1;i<5;i++){
 				if (newNoRec.size()>0 && prevActNowRet.size()>0){	
 
@@ -229,6 +232,265 @@ public class RelationshipReconciliation {
 		}
 	}
 
+	private void groupReassignment(
+			ArrayList<Relationship> snorelA,
+			ArrayList<Relationship> snorelB) 
+					throws  IOException {
+
+		long startTime = System.currentTimeMillis();
+		logger.info("START GROUP NUMBER RECONCILIATION");
+		Collections.sort(snorelA);
+		Collections.sort(snorelB);
+		int  countConSeen=0;
+		Iterator<Relationship> itA = snorelA.iterator();
+		Iterator<Relationship> itB = snorelB.iterator();
+		Relationship rel_A = null;
+		boolean done_A = false;
+		if (itA.hasNext()) {
+			rel_A = itA.next();
+		} else {
+			done_A = true;
+		}
+		Relationship rel_B = null;
+		boolean done_B = false;
+		if (itB.hasNext()) {
+			rel_B = itB.next();
+		} else {
+			done_B = true;
+		}
+
+
+		// BY SORT ORDER, LOWER NUMBER ADVANCES FIRST
+		while (!done_A && !done_B) {
+
+			if (rel_A.sourceId == rel_B.sourceId) {
+				long thisC1 = rel_A.sourceId;
+				// REMAINDER LIST_A GROUP 0 FOR C1
+				while (rel_A.sourceId == thisC1 && rel_A.group == 0 && !done_A) {
+
+					if (itA.hasNext()) {
+						rel_A = itA.next();
+					} else {
+						done_A = true;
+						break;
+					}
+				}
+
+				// REMAINDER LIST_B GROUP 0 FOR C1
+				while (rel_B.sourceId == thisC1 && rel_B.group == 0 && !done_B) {
+
+					if (itB.hasNext()) {
+						rel_B = itB.next();
+					} else {
+						done_B = true;
+						break;
+					}
+				}
+
+				// ** SEGMENT GROUPS **
+				RelationshipGroupList groupList_A = new RelationshipGroupList();
+				RelationshipGroupList groupList_B = new RelationshipGroupList();
+				RelationshipGroup groupA = null;
+				RelationshipGroup groupB = null;
+
+				// SEGMENT GROUPS IN LIST_A
+				int prevGroup = Integer.MIN_VALUE;
+				while (rel_A.sourceId == thisC1 && !done_A) {
+					if (rel_A.group != prevGroup) {
+						groupA = new RelationshipGroup();
+						groupList_A.add(groupA);
+					}
+
+					groupA.add(rel_A);
+
+					prevGroup = rel_A.group;
+					if (itA.hasNext()) {
+						rel_A = itA.next();
+					} else {
+						done_A = true;
+					}
+				}
+				// SEGMENT GROUPS IN LIST_B
+				prevGroup = Integer.MIN_VALUE;
+				while (rel_B.sourceId == thisC1 && !done_B) {
+					if (rel_B.group != prevGroup) {
+						groupB = new RelationshipGroup();
+						groupList_B.add(groupB);
+					}
+
+					groupB.add(rel_B);
+
+					prevGroup = rel_B.group;
+					if (itB.hasNext()) {
+						rel_B = itB.next();
+					} else {
+						done_B = true;
+					}
+				}
+
+				int dist;
+				HashMap<Integer,List<Integer[]>> mapGroups=new HashMap<Integer, List<Integer[]>>(); 
+				HashMap<Integer,List<Integer[]>> minDist=new HashMap<Integer, List<Integer[]>>();
+				Integer prevRGNum;
+				Integer currRGNum;
+				if (groupList_B.size() > 0) {
+					if (++countConSeen % 1000 == 0) {
+						logger.info("::: [groupReassignment] @ #\t" + countConSeen + " group list seen for concepts");
+					}
+					for (Integer sgb=0 ;sgb< groupList_B.size();sgb++) {
+						currRGNum=groupList_B.get(sgb).get(0).group;
+						if (currRGNum != 0) {
+							for (Integer  sga=0 ;sga< groupList_A.size();sga++) {
+								prevRGNum=groupList_A.get(sga).get(0).group;
+								if (prevRGNum != 0 ) {
+
+									if (countConSeen % 10 == 0) {
+										logger.info("::: [groupReassignment] @ #\t" + countConSeen + " distance calc.");
+									}
+									if (groupList_B.get(sgb).get(0).sourceId==151004l){
+										boolean bstop=true;
+									}
+									dist=groupList_B.get(sgb).getDistanceToGroupInSameConcept(groupList_A.get(sga));
+									List<Integer[]> tmplist;
+									if (mapGroups.containsKey(currRGNum)){
+										tmplist=mapGroups.get(currRGNum);
+									}else{
+										tmplist=new ArrayList<Integer[]>();
+
+									}
+									tmplist.add(new Integer[]{prevRGNum,dist});
+									mapGroups.put(currRGNum,tmplist);
+
+									List<Integer[]> tmplist2;
+									if (minDist.containsKey(prevRGNum)){
+										tmplist2=minDist.get(prevRGNum); 
+									}else{
+										tmplist2=new  ArrayList<Integer[]>();
+									}
+									tmplist2.add(new Integer[]{currRGNum,dist});
+									minDist.put(prevRGNum, tmplist2);
+								}
+							}
+						} 
+					}
+					HashMap<Integer,Integer> endMap=new HashMap<Integer,Integer>();
+
+					if (mapGroups.size()>0){
+						Integer bestPrevRGNum;
+						Integer bestCurrRGNum;
+						List<Integer> usageCurrGroups=new ArrayList<Integer>();
+						List<Integer> usagePrevGroups=new ArrayList<Integer>();
+						boolean incomplete=true;
+						boolean tooMuchPrev=false;
+						boolean tooMuchCurr=false;
+						while (incomplete && !tooMuchPrev && !tooMuchCurr){
+							incomplete=false;
+							for (Integer sgb=0 ;sgb< groupList_B.size();sgb++) {
+								currRGNum=groupList_B.get(sgb).get(0).group;
+								if (!usageCurrGroups.contains(currRGNum)){
+									incomplete=true;
+									List<Integer[]> currDistances=mapGroups.get(currRGNum);
+									bestPrevRGNum=getBestGroupNumber(currDistances, usagePrevGroups);
+									if (bestPrevRGNum==null){
+										tooMuchCurr=true;
+										break;
+									}
+									List<Integer[]> prevDistances=minDist.get(bestPrevRGNum);
+									bestCurrRGNum=getBestGroupNumber(prevDistances, usageCurrGroups);
+									if (bestCurrRGNum==null){
+										tooMuchPrev=true;
+										break;
+									}
+									if (bestCurrRGNum==currRGNum){
+										endMap.put(currRGNum,bestPrevRGNum);
+										usageCurrGroups.add(currRGNum);
+										usagePrevGroups.add(bestPrevRGNum);
+									}
+								}
+							}
+						}
+					}
+					Integer nextNum;
+					for (Integer sgb=0 ;sgb< groupList_B.size();sgb++) {
+						currRGNum=groupList_B.get(sgb).get(0).group;
+						if (!endMap.containsKey(currRGNum)){
+							nextNum=nextRoleGroupNumber(endMap);
+							endMap.put(currRGNum,nextNum);
+						}
+					}
+					for (RelationshipGroup relationshipGroup:groupList_B){
+						for (Relationship relationship:relationshipGroup){
+							relationship.group=endMap.get(relationship.group);
+						}
+					}
+				}
+			} else if (rel_A.sourceId > rel_B.sourceId) {
+				// CASE 2: LIST_B HAS CONCEPT NOT IN LIST_A
+				long thisC1 = rel_B.sourceId;
+				while (rel_B.sourceId == thisC1) {
+
+					if (itB.hasNext()) {
+						rel_B = itB.next();
+					} else {
+						done_B = true;
+						break;
+					}
+				}
+
+			} else {
+				// CASE 3: LIST_A HAS CONCEPT NOT IN LIST_B
+				long thisC1 = rel_A.sourceId;
+				while (rel_A.sourceId == thisC1) {
+					if (itA.hasNext()) {
+						rel_A = itA.next();
+					} else {
+						done_A = true;
+						break;
+					}
+				}
+			}
+		}
+
+		long lapseTime = System.currentTimeMillis() - startTime;
+		logger.info("TIME FOR GROUP NUMBER RECONCILIATION:" + ((float) lapseTime / 1000) / 60);
+	}
+
+	private Integer getBestGroupNumber(List<Integer[]> distances,
+			List<Integer> usageGroups) {
+		Integer bestGr=null;
+		Integer prevDist=Integer.MAX_VALUE;
+		for (Integer[] tuple:distances){
+			if (!usageGroups.contains(tuple[0])){
+				Integer dist=tuple[1];
+				if (dist<=prevDist ){
+					bestGr=tuple[0];
+					prevDist=dist;
+				}
+			}
+		}
+		return bestGr;
+	}
+
+	private Integer nextRoleGroupNumber(HashMap<Integer,Integer> map) {
+
+		Integer testNum = 1;
+		boolean exists=true;
+		while (exists){
+			exists=false;
+			for (Integer i = 0; i < map.size(); i++) {
+				if (map.get(i) == testNum) {
+					exists = true;
+					break;
+				}
+			}
+
+			if (exists) {
+				testNum++;
+			}
+		}
+
+		return testNum;
+	}
 	private String comparePrevInact(int step) throws IOException {
 		// STATISTICS COUNTERS
 		int countConSeen = 0;
@@ -250,7 +512,7 @@ public class RelationshipReconciliation {
 			}
 			TreeMap<String, Relationship> relsPrev = prevInact.get(conceptId);
 			ArrayList<Relationship> relsCurr = newNoRec.get(conceptId);
-			
+
 			if (relsPrev!=null){
 				for (Relationship relC:relsCurr){
 					reconciliated=false;
@@ -981,38 +1243,6 @@ public class RelationshipReconciliation {
 			return 3; // DROPPED
 		}
 	} // compareSnoRel
-
-	/**
-	 * Next role group number.
-	 *
-	 * @param sgl the sgl
-	 * @param gnum the gnum
-	 * @return the int
-	 */
-	private static int nextRoleGroupNumber(RelationshipGroupList sgl, int gnum) {
-
-		int testNum = gnum + 1;
-		int sglSize = sgl.size();
-		int trial = 0;
-		while (trial <= sglSize) {
-
-			boolean exists = false;
-			for (int i = 0; i < sglSize; i++) {
-				if (sgl.get(i).get(0).group == testNum) {
-					exists = true;
-				}
-			}
-
-			if (exists == false) {
-				return testNum;
-			} else {
-				testNum++;
-				trial++;
-			}
-		}
-
-		return testNum;
-	}
 
 	@SuppressWarnings("unchecked")
 	private void getParams() throws ConfigurationException  {

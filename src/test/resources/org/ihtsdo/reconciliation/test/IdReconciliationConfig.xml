@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<current_inferred_relationship_snapshot_files>
+		<file>src/test/resources/org/ihtsdo/reconciliation/test/IdReconciliation_Current_File.txt</file>
+	</current_inferred_relationship_snapshot_files>
+	<previous_inferred_relationship_snapshot_files>
+		<file>src/test/resources/org/ihtsdo/reconciliation/test/IdReconciliation_Prev_File.txt</file>
+	</previous_inferred_relationship_snapshot_files>
+	<!-- relationship output file -->
+	<relationships_output_file>src/test/resources/org/ihtsdo/reconciliation/test/Id_Inferred_Reconciliated.txt</relationships_output_file>
+</params>

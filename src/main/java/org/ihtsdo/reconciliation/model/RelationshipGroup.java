@@ -178,6 +178,48 @@ public class RelationshipGroup extends ArrayList<Relationship> {
         }
         return null;
     }
+    
+    public int getDistanceToGroupInSameConcept(RelationshipGroup relationshipGroup){
+    	int ret=0;
+    	if (this.equals(relationshipGroup)) {
+            return 0;
+        }
+    	int sizeA = this.size();
+    	int sizeB = relationshipGroup.size();
+    	List<Integer> indexMatches=new ArrayList<Integer>();
+    	boolean match;
+    	int val;
+    	for (int i=0;i<sizeA;i++){
+    		match=false;
+    		for (Integer j=0;j<sizeB;j++){
+    			
+    			if (!indexMatches.contains(j)){
+	    			val=this.get(i).compareSameConceptWOGroupTo(relationshipGroup.get(j));
+	    			if (val==0){
+	    				match=true;
+	    				indexMatches.add(j);
+	    				break;
+	    			}
+    			}
+    		}
+    		if (!match){
+    			ret++;
+    		}
+    	}
+    	int sizeMatches=indexMatches.size();
+    	if (sizeMatches==0){
+    		return Integer.MAX_VALUE;
+    	}
+    	if (sizeA>sizeB){
+    		ret+= ((sizeB-sizeMatches) * 2);
+    		ret+=sizeA-sizeB;
+    	}else{
+    		ret+= ((sizeA-sizeMatches) * 2);
+    		ret+=sizeB-sizeA;
+    	}
+    	
+    	return ret;
+    }
 
 } // class RelationshipGroup
 
