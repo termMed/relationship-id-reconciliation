@@ -334,9 +334,6 @@ public class RelationshipReconciliation {
 				Integer prevRGNum;
 				Integer currRGNum;
 				if (groupList_B.size() > 0) {
-					if (++countConSeen % 1000 == 0) {
-						logger.info("::: [groupReassignment] @ #\t" + countConSeen + " group list seen for concepts");
-					}
 					for (Integer sgb=0 ;sgb< groupList_B.size();sgb++) {
 						currRGNum=groupList_B.get(sgb).get(0).group;
 						if (currRGNum != 0) {
@@ -344,9 +341,6 @@ public class RelationshipReconciliation {
 								prevRGNum=groupList_A.get(sga).get(0).group;
 								if (prevRGNum != 0 ) {
 
-									if (countConSeen % 10 == 0) {
-										logger.info("::: [groupReassignment] @ #\t" + countConSeen + " distance calc.");
-									}
 									if (groupList_B.get(sgb).get(0).sourceId==151004l){
 										boolean bstop=true;
 									}
@@ -451,8 +445,7 @@ public class RelationshipReconciliation {
 			}
 		}
 
-		long lapseTime = System.currentTimeMillis() - startTime;
-		logger.info("TIME FOR GROUP NUMBER RECONCILIATION:" + ((float) lapseTime / 1000) / 60);
+		logger.info("TIME FOR GROUP NUMBER RECONCILIATION:\t" + toStringLapseSec(startTime) + "\t ");
 	}
 
 	private Integer getBestGroupNumber(List<Integer[]> distances,
@@ -493,7 +486,6 @@ public class RelationshipReconciliation {
 	}
 	private String comparePrevInact(int step) throws IOException {
 		// STATISTICS COUNTERS
-		int countConSeen = 0;
 		int countSame = 0;
 		int countSameISA = 0;
 		int countA_Diff = 0;
@@ -507,9 +499,6 @@ public class RelationshipReconciliation {
 
 		boolean reconciliated=false;
 		for (Long conceptId:newNoRec.keySet()){
-			if (++countConSeen % 25000 == 0) {
-				logger.info("::: [comparePrevInact] @ #\t" + countConSeen);
-			}
 			TreeMap<String, Relationship> relsPrev = prevInact.get(conceptId);
 			ArrayList<Relationship> relsCurr = newNoRec.get(conceptId);
 
@@ -896,14 +885,11 @@ public class RelationshipReconciliation {
 		}
 
 		logger.info("\r\n::: [compareActivesAndWriteBack]"
-				+ "\r\n::: snorelA.size() = \t" + snorelA.size()
-				+ "\r\n::: snorelB.size() = \t" + snorelB.size());
+				+ "\r\n::: Previous active relationships = \t" + snorelA.size()
+				+ "\r\n::: Current active inferred relationships  = \t" + snorelB.size());
 
 		// BY SORT ORDER, LOWER NUMBER ADVANCES FIRST
 		while (!done_A && !done_B) {
-			if (++countConSeen % 25000 == 0) {
-				logger.info("::: [compareActivesAndWriteBack] @ #\t" + countConSeen);
-			}
 
 			if (rel_A.sourceId == rel_B.sourceId) {
 				// COMPLETELY PROCESS ALL C1 FOR BOTH IN & OUT
@@ -921,7 +907,6 @@ public class RelationshipReconciliation {
 						countA_Total++;
 						countB_Total++;
 						countSame++;
-						// NOTHING TO WRITE IN THIS CASE
 						if (rel_A.typeId == isa) {
 							countSameISA++;
 						}
