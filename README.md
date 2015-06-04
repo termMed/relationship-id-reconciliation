@@ -29,7 +29,7 @@ Output files:
 * consolidated_delta_file: Delta relationships file, ready to be tested
 
 ## Running the reconciliation processs
-The main method is located in the class "org.ihtsdo.reconciliation.ReconciliationRunner.java", this should be executed from an IDE at the time, or it can be compiled into an executable jar (not provided in this version).
+The main method is located in the class "com.termmed.reconciliation.ReconciliationRunner.java", this should be executed from an IDE at the time, or it can be compiled into an executable jar (not provided in this version).
 
 The process will look for additional parameters in the mandatory "RunConfiguration.xml" file, always located in the project root folder.
 
