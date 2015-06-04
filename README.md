@@ -51,7 +51,9 @@ When a relationship or a group matches, it is removed from the candidate set and
 #### 1. Relationship Groups reconciliation
 The first stage uses group composition matching, ignoring the groupId, to identify previously released groups that have not changed the composition.
 
-If the entire group matches, all the relatiomship ids are inherited from previous release.
+If the entire group matches, all the relatiomship ids are inherited from previous release, and the groupId is also inherited from last release.
+
+The process also uses partial group matching, to identify groups that have changed from last release (lost or gained a relationship). When there are no "whole group" matches, the process selects the most similar group, that has some components in common, and then inherits relationshipIds and groupIds from the pevious release. New relationships in groups are left without id for the next step, in case they match with previosuly ungrouped relationships.
 
 #### 2. Individual relationships matching
 This second stage searches for matches in the remaining relationships.
